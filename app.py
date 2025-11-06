@@ -116,9 +116,10 @@ st.header("Descargar Recursos")
 
 ```
 st.subheader("Imágenes")
+# URLs de imágenes desde Secrets
 image_urls = {
-    "Imagen 1": "TU_URL_DE_IMAGEN_1",
-    "Imagen 2": "TU_URL_DE_IMAGEN_2"
+    "Imagen 1": st.secrets["urls"]["imagen_1"],
+    "Imagen 2": st.secrets["urls"]["imagen_2"]
 }
 selected_image = st.selectbox("Selecciona la imagen a descargar:", list(image_urls.keys()))
 if st.button("Descargar Imagen"):
@@ -136,9 +137,10 @@ if st.button("Descargar Imagen"):
         st.error("No se pudo descargar la imagen.")
 
 st.subheader("Archivos Excel")
+# URLs de Excel desde Secrets
 excel_urls = {
-    "Reporte 1": "TU_URL_DE_EXCEL_1",
-    "Reporte 2": "TU_URL_DE_EXCEL_2"
+    "Reporte 1": st.secrets["urls"]["excel_1"],
+    "Reporte 2": st.secrets["urls"]["excel_2"]
 }
 selected_excel = st.selectbox("Selecciona el Excel a descargar:", list(excel_urls.keys()), key="excel_select")
 if st.button("Descargar Excel"):
@@ -164,4 +166,3 @@ if st.button("Descargar Excel"):
 
 st.markdown("---")
 st.markdown("© 2025 Cross-Docking Platform")
-
