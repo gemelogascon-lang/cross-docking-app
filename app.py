@@ -38,15 +38,15 @@ section = st.sidebar.radio("Ir a sección:", [
 
 if section == "Introducción":
 st.header("Cross-Docking Logistics")
-st.markdown("""
-Bienvenido a la plataforma de Cross-Docking.
-Aquí se optimiza la logística y se reducen costos mediante la distribución directa de productos.
-""")
+st.markdown(
+"Bienvenido a la plataforma de Cross-Docking.\n"
+"Aquí se optimiza la logística y se reducen costos mediante la distribución directa de productos."
+)
 st.subheader("Descripción de la Operación")
-st.markdown("""
-El Cross-Docking consiste en recibir mercancía y enviarla directamente al punto de venta o cliente sin almacenamiento prolongado.
-Esto permite minimizar inventarios y mejorar tiempos de entrega.
-""")
+st.markdown(
+"El Cross-Docking consiste en recibir mercancía y enviarla directamente al punto de venta o cliente sin almacenamiento prolongado.\n"
+"Esto permite minimizar inventarios y mejorar tiempos de entrega."
+)
 
 # -----------------------
 
@@ -56,14 +56,17 @@ Esto permite minimizar inventarios y mejorar tiempos de entrega.
 
 elif section == "Proceso Cross-Docking":
 st.header("Proceso de Cross-Docking")
-st.markdown("""
-1. Recepción de mercancía en el muelle de entrada.
-2. Inspección y clasificación de productos.
-3. Preparación de pedidos según rutas y clientes.
-4. Despacho inmediato hacia transporte o cliente final.
-""")
+st.markdown(
+"1. Recepción de mercancía en el muelle de entrada.\n"
+"2. Inspección y clasificación de productos.\n"
+"3. Preparación de pedidos según rutas y clientes.\n"
+"4. Despacho inmediato hacia transporte o cliente final."
+)
 st.subheader("Diagrama del Proceso")
-st.image("[https://via.placeholder.com/700x300.png?text=Diagrama+Cross-Docking](https://via.placeholder.com/700x300.png?text=Diagrama+Cross-Docking)", caption="Flujo del Cross-Docking")
+st.image(
+"[https://via.placeholder.com/700x300.png?text=Diagrama+Cross-Docking](https://via.placeholder.com/700x300.png?text=Diagrama+Cross-Docking)",
+caption="Flujo del Cross-Docking"
+)
 
 # -----------------------
 
@@ -98,12 +101,12 @@ st.dataframe(df)
 
 elif section == "Beneficios":
 st.header("Beneficios del Cross-Docking")
-st.markdown("""
-- Reducción de inventarios y costos de almacenamiento.
-- Mejoras en tiempos de entrega.
-- Minimización de errores y devoluciones.
-- Optimización de recursos logísticos.
-""")
+st.markdown(
+"- Reducción de inventarios y costos de almacenamiento.\n"
+"- Mejoras en tiempos de entrega.\n"
+"- Minimización de errores y devoluciones.\n"
+"- Optimización de recursos logísticos."
+)
 
 # -----------------------
 
@@ -116,7 +119,6 @@ st.header("Descargar Recursos")
 
 ```
 st.subheader("Imágenes")
-# URLs de imágenes desde Secrets
 image_urls = {
     "Imagen 1": st.secrets["urls"]["imagen_1"],
     "Imagen 2": st.secrets["urls"]["imagen_2"]
@@ -137,7 +139,6 @@ if st.button("Descargar Imagen"):
         st.error("No se pudo descargar la imagen.")
 
 st.subheader("Archivos Excel")
-# URLs de Excel desde Secrets
 excel_urls = {
     "Reporte 1": st.secrets["urls"]["excel_1"],
     "Reporte 2": st.secrets["urls"]["excel_2"]
@@ -148,21 +149,5 @@ if st.button("Descargar Excel"):
     response = requests.get(url)
     if response.status_code == 200:
         excel_data = BytesIO(response.content)
-        st.download_button(
-            label="Descargar",
-            data=excel_data,
-            file_name=f"{selected_excel}.xlsx",
-            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-        )
-    else:
-        st.error("No se pudo descargar el Excel.")
+  
 ```
-
-# -----------------------
-
-# Footer
-
-# -----------------------
-
-st.markdown("---")
-st.markdown("© 2025 Cross-Docking Platform")
