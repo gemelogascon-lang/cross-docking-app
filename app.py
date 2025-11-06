@@ -12,7 +12,7 @@ from io import BytesIO
 st.set_page_config(
 page_title="Cross-Docking Platform",
 page_icon="📦",
-layout="wide",
+layout="wide"
 )
 
 # -----------------------
