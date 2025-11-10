@@ -3,6 +3,7 @@ import streamlit as st
 # ---------------------------------
 # CONFIGURACIÓN DE LA PÁGINA
 # ---------------------------------
+st.set_page_config(page_title="Fresh Aurora Foods", page_icon="🥑", layout="wide")
 
 # ---------------------------------
 # MENÚ LATERAL
@@ -17,7 +18,7 @@ menu = st.sidebar.radio(
 # SECCIÓN: INICIO
 # =================================
 if menu == "🏠 Inicio":
-    # --- Banner tipo portada ---
+    # --- Banner tipo portada sin texto ---
     st.markdown(
         """
         <style>
@@ -29,27 +30,16 @@ if menu == "🏠 Inicio":
             background-size: cover;
             background-position: center;
             border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             margin-bottom: 40px;
         }
-        .hero-text {
-            background-color: rgba(0, 0, 0, 0.4);
-            padding: 20px 40px;
-            border-radius: 8px;
-            font-size: 28px;
-            font-weight: bold;
-            color: white;
-            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        .centered {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.7;
         }
         </style>
 
-        <div class="hero">
-            <div class="hero-text">
-                Exportando sabor, frescura y confianza 🌿
-            </div>
-        </div>
+        <div class="hero"></div>
         """,
         unsafe_allow_html=True
     )
@@ -58,58 +48,79 @@ if menu == "🏠 Inicio":
     st.markdown("<h1 style='text-align:center;'>Fresh Aurora Foods</h1>", unsafe_allow_html=True)
     st.markdown("---")
 
-    # --- Información de la empresa ---
-    st.header("History")
+    # --- Textos centrados ---
+    st.markdown("<h2 style='text-align:center;'>History</h2>", unsafe_allow_html=True)
     st.markdown(
         """
-        *"We've been in the fresh food market since 2010. While we've faced challenges, such
+        <p class='centered'>
+        "We've been in the fresh food market since 2010. While we've faced challenges, such
         as the rapid evolution of technology in the sector, we have consistently reinvented
-        ourselves to offer our customers the highest quality."*
-        """
+        ourselves to offer our customers the highest quality."
+        </p>
+        """,
+        unsafe_allow_html=True
     )
 
-    st.header("Mission")
+    st.markdown("<h2 style='text-align:center;'>Mission</h2>", unsafe_allow_html=True)
     st.markdown(
         """
-        *"To deliver high-quality fresh food to customers across Mexico, the United States, and
-        Canada, ensuring optimal speed and the most competitive pricing in the market."*
-        """
+        <p class='centered'>
+        "To deliver high-quality fresh food to customers across Mexico, the United States, and
+        Canada, ensuring optimal speed and the most competitive pricing in the market."
+        </p>
+        """,
+        unsafe_allow_html=True
     )
 
-    st.header("Vision")
+    st.markdown("<h2 style='text-align:center;'>Vision</h2>", unsafe_allow_html=True)
     st.markdown(
         """
-        *"To become the fastest-growing and most trusted Mexican fresh fruit exporter in
-        North America."*
-        """
+        <p class='centered'>
+        "To become the fastest-growing and most trusted Mexican fresh fruit exporter in
+        North America."
+        </p>
+        """,
+        unsafe_allow_html=True
     )
 
-    st.header("Values")
-    st.markdown("**Trust, Support, Commitment, Modernization**")
-
-    st.header("Value Proposition")
+    st.markdown("<h2 style='text-align:center;'>Values</h2>", unsafe_allow_html=True)
     st.markdown(
         """
-        **Buy our products directly from farmers and manage the entire transformation process
-        to make sure quality is not affected.**
+        <p class='centered'>
+        <b>Trust, Support, Commitment, Modernization</b>
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown("<h2 style='text-align:center;'>Value Proposition</h2>", unsafe_allow_html=True)
+    st.markdown(
         """
+        <p class='centered'>
+        <b>Buy our products directly from farmers and manage the entire transformation process
+        to make sure quality is not affected.</b>
+        </p>
+        """,
+        unsafe_allow_html=True
     )
 
     st.markdown("---")
 
-    st.header("Business Context")
+    st.markdown("<h2 style='text-align:center;'>Business Context</h2>", unsafe_allow_html=True)
     st.markdown(
         """
-        **Industry:** Cold Chain / Agribusiness  
-        **Country of Origin:** Mexico  
-        **Export Markets:** United States and Canada  
-        **Distribution Corridor:** North American refrigerated trucking network  
-        **Cross-Docking Hub:** Laredo, Texas (inspection, redistribution, and customs clearance)  
-        **Main Logistics Challenge:** Maintaining 2–4°C cold chain integrity and preventing spoilage
-        during border inspections or customs delays.  
-        **Transport Mode:** Refrigerated trucking (reefer units)  
-        **Incoterms:** DAP (Delivered at Place) / FCA (Free Carrier)
-        """
+        <div class='centered'>
+        <p><b>Industry:</b> Cold Chain / Agribusiness</p>
+        <p><b>Country of Origin:</b> Mexico</p>
+        <p><b>Export Markets:</b> United States and Canada</p>
+        <p><b>Distribution Corridor:</b> North American refrigerated trucking network</p>
+        <p><b>Cross-Docking Hub:</b> Laredo, Texas (inspection, redistribution, and customs clearance)</p>
+        <p><b>Main Logistics Challenge:</b> Maintaining 2–4°C cold chain integrity and preventing spoilage during border inspections or customs delays.</p>
+        <p><b>Transport Mode:</b> Refrigerated trucking (reefer units)</p>
+        <p><b>Incoterms:</b> DAP (Delivered at Place) / FCA (Free Carrier)</p>
+        </div>
+        """,
+        unsafe_allow_html=True
     )
 
 # =================================
