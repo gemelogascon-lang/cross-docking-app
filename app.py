@@ -32,8 +32,8 @@ if menu == "🏠 Inicio":
     )
 
     st.markdown("<h1 style='text-align:center;'>Fresh Aurora Foods</h1>", unsafe_allow_html=True)
-    st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/logo.png
-", width=350)
+    st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/logo.png", width=400)
+
     st.markdown("<hr>", unsafe_allow_html=True)
 
     st.markdown("<h2 style='text-align:center;'>History</h2>", unsafe_allow_html=True)
