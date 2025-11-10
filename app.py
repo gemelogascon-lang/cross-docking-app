@@ -18,82 +18,99 @@ menu = st.sidebar.radio(
 # SECCIÓN: INICIO
 # =================================
 if menu == "🏠 Inicio":
-    # Estilo centrado
-   st.markdown(
-    """
-    <style>
-    .banner-container {
-        width: 100%;
-        height: 280px; /* Ajusta la altura según el tamaño de tu imagen */
-        background-image: url('https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/logo.png');
-        background-size: cover;
-        background-position: center;
-        border-radius: 10px;
-        margin-bottom: 30px;
-    }
-    </style>
-
-    <div class="banner-container"></div>
-    """,
-    unsafe_allow_html=True
-)
-
-    st.markdown("<h1 style='text-align:center;'>Fresh Aurora Foods</h1>", unsafe_allow_html=True)
-    st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/logo.png", width=400)
-
-    st.markdown("<hr>", unsafe_allow_html=True)
-
-    st.markdown("<h2 style='text-align:center;'>History</h2>", unsafe_allow_html=True)
-    st.markdown(
-        "<p class='centered'>“We've been in the fresh food market since 2010. While we've faced challenges, such "
-        "as the rapid evolution of technology in the sector, we have consistently reinvented ourselves "
-        "to offer our customers the highest quality.”</p>",
-        unsafe_allow_html=True
-    )
-
-    st.markdown("<h2 style='text-align:center;'>Mission</h2>", unsafe_allow_html=True)
-    st.markdown(
-        "<p class='centered'>“To deliver high-quality fresh food to customers across Mexico, the United States, "
-        "and Canada, ensuring optimal speed and the most competitive pricing in the market.”</p>",
-        unsafe_allow_html=True
-    )
-
-    st.markdown("<h2 style='text-align:center;'>Vision</h2>", unsafe_allow_html=True)
-    st.markdown(
-        "<p class='centered'>“To become the fastest-growing and most trusted Mexican fresh fruit exporter in "
-        "North America.”</p>",
-        unsafe_allow_html=True
-    )
-
-    st.markdown("<h2 style='text-align:center;'>Values</h2>", unsafe_allow_html=True)
-    st.markdown(
-        "<p class='centered'><b>Trust, Support, Commitment, Modernization</b></p>",
-        unsafe_allow_html=True
-    )
-
-    st.markdown("<h2 style='text-align:center;'>Value Proposition</h2>", unsafe_allow_html=True)
-    st.markdown(
-        "<p class='centered'><b>Buy our products directly from farmers and manage the entire transformation process "
-        "to make sure quality is not affected.</b></p>",
-        unsafe_allow_html=True
-    )
-
-    st.markdown("<hr>", unsafe_allow_html=True)
-    st.markdown("<h2 style='text-align:center;'>Business Context</h2>", unsafe_allow_html=True)
+    # --- Banner tipo portada ---
     st.markdown(
         """
-        <div class='centered'>
-        <p><b>Industry:</b> Cold Chain / Agribusiness</p>
-        <p><b>Country of Origin:</b> Mexico</p>
-        <p><b>Export Markets:</b> United States and Canada</p>
-        <p><b>Distribution Corridor:</b> North American refrigerated trucking network</p>
-        <p><b>Cross-Docking Hub:</b> Laredo, Texas (inspection, redistribution, and customs clearance)</p>
-        <p><b>Main Logistics Challenge:</b> Maintaining 2–4°C cold chain integrity and preventing spoilage during border inspections or customs delays.</p>
-        <p><b>Transport Mode:</b> Refrigerated trucking (reefer units)</p>
-        <p><b>Incoterms:</b> DAP (Delivered at Place) / FCA (Free Carrier)</p>
+        <style>
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-image: url('https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/logo.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px 40px;
+            border-radius: 8px;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+        }
+        </style>
+
+        <div class="hero">
+            <div class="hero-text">
+                Exportando sabor, frescura y confianza 🌿
+            </div>
         </div>
         """,
         unsafe_allow_html=True
+    )
+
+    # --- Título principal ---
+    st.markdown("<h1 style='text-align:center;'>Fresh Aurora Foods</h1>", unsafe_allow_html=True)
+    st.markdown("---")
+
+    # --- Información de la empresa ---
+    st.header("History")
+    st.markdown(
+        """
+        *"We've been in the fresh food market since 2010. While we've faced challenges, such
+        as the rapid evolution of technology in the sector, we have consistently reinvented
+        ourselves to offer our customers the highest quality."*
+        """
+    )
+
+    st.header("Mission")
+    st.markdown(
+        """
+        *"To deliver high-quality fresh food to customers across Mexico, the United States, and
+        Canada, ensuring optimal speed and the most competitive pricing in the market."*
+        """
+    )
+
+    st.header("Vision")
+    st.markdown(
+        """
+        *"To become the fastest-growing and most trusted Mexican fresh fruit exporter in
+        North America."*
+        """
+    )
+
+    st.header("Values")
+    st.markdown("**Trust, Support, Commitment, Modernization**")
+
+    st.header("Value Proposition")
+    st.markdown(
+        """
+        **Buy our products directly from farmers and manage the entire transformation process
+        to make sure quality is not affected.**
+        """
+    )
+
+    st.markdown("---")
+
+    st.header("Business Context")
+    st.markdown(
+        """
+        **Industry:** Cold Chain / Agribusiness  
+        **Country of Origin:** Mexico  
+        **Export Markets:** United States and Canada  
+        **Distribution Corridor:** North American refrigerated trucking network  
+        **Cross-Docking Hub:** Laredo, Texas (inspection, redistribution, and customs clearance)  
+        **Main Logistics Challenge:** Maintaining 2–4°C cold chain integrity and preventing spoilage
+        during border inspections or customs delays.  
+        **Transport Mode:** Refrigerated trucking (reefer units)  
+        **Incoterms:** DAP (Delivered at Place) / FCA (Free Carrier)
+        """
     )
 
 # =================================
@@ -102,97 +119,67 @@ if menu == "🏠 Inicio":
 elif menu == "🥭 Productos":
     st.title("Our Products")
 
-    # PRODUCT 1 – Avocado Pulp
-    st.markdown("---")
     col1, col2 = st.columns(2, gap="large")
 
     with col1:
         st.subheader("Frozen Avocado Pulp 🥑")
         st.markdown(
             """
-            **Description:**  
-            100% natural avocado pulp made from ripe Hass avocados grown in Michoacán, Mexico.  
-            Smooth texture and rich flavor ideal for guacamole, toast, dips, and foodservice use.  
+            100% natural avocado pulp made from ripe Hass avocados grown in Michoacán, Mexico.
+            Smooth texture and rich flavor ideal for guacamole, toast, dips, and foodservice use.
+            Pasteurized, frozen, and packed under HACCP-certified conditions.
 
-            **Specifications:**  
+            **Specifications:**
             - 100% Hass avocado pulp  
             - Pasteurized & quick-frozen at -18°C  
-            - Shelf Life: 18 months (frozen)  
+            - Shelf Life: 18 months  
             - USDA & FDA compliant, SENASICA certified  
-
-            **Target Markets:**  
-            - B2B: Restaurants, distributors  
-            - B2C: Supermarkets  
-            - E-commerce: Grocery platforms  
-
-            **Estimated Price:**  
-            - Wholesale: USD $9 / 500 g  
-            - Retail: USD $11 / 500 g
             """
         )
     with col2:
-        st.image("https://raw.githubusercontent.com/tu_usuario/tu_repo/main/images/avocado_pulp.jpg", width=500)
+        st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/avocado_pulp.jpg", width=500)
 
-    # PRODUCT 2 – Mango Cubes
     st.markdown("---")
+
     col1, col2 = st.columns(2, gap="large")
 
     with col1:
         st.subheader("Mango Cubes IQF 🥭")
         st.markdown(
             """
-            **Description:**  
-            Naturally sweet, hand-cut mango cubes from Mexican Kent.  
-            Individually quick-frozen (IQF) to preserve flavor, color, and texture.  
+            Naturally sweet, hand-cut mango cubes from Mexican Kent.
+            Individually quick-frozen (IQF) to preserve flavor, color, and texture.
 
-            **Specifications:**  
+            **Specifications:**
             - 100% mango  
             - IQF frozen at -18°C  
             - Shelf Life: 24 months  
             - FDA & CFIA compliant, SENASICA certified  
-
-            **Target Markets:**  
-            - B2B: Smoothie producers, airlines  
-            - B2C: Supermarkets, health food stores  
-            - E-commerce: Subscription meal kits  
-
-            **Estimated Price:**  
-            - Wholesale: USD $12 / 1 kg  
-            - Retail: USD $15 / 1 kg
             """
         )
     with col2:
-        st.image("https://raw.githubusercontent.com/tu_usuario/tu_repo/main/images/mango_cubes.jpg", width=500)
+        st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/mango_cubes.jpg", width=500)
 
-    # PRODUCT 3 – Ready-to-Eat Salads
     st.markdown("---")
+
     col1, col2 = st.columns(2, gap="large")
 
     with col1:
         st.subheader("Ready-to-Eat Salads 🥬")
         st.markdown(
             """
-            **Description:**  
-            Fresh, pre-washed salad mixes with Mexican leafy greens, cherry tomatoes, shredded carrots, and optional dressings.  
+            Fresh, pre-washed salad mixes combining Mexican leafy greens, cherry tomatoes, shredded carrots,
+            and optional dressings. Designed for healthy convenience.
 
-            **Specifications:**  
+            **Specifications:**
             - Ingredients: Lettuce, spinach, tomato, carrot  
             - Triple-washed, MAP packed  
             - Shelf Life: 5 days refrigerated  
             - HACCP & ISO 22000 certified  
-
-            **Target Markets:**  
-            - B2B: Airlines, hotels, cafeterias  
-            - B2C: Supermarkets  
-            - E-commerce: Healthy meal delivery  
-
-            **Estimated Price:**  
-            - Wholesale: USD $2.50 / 250 g  
-            - Retail: USD $3.80 / 250 g
             """
         )
     with col2:
-        st.image("https://raw.githubusercontent.com/tu_usuario/tu_repo/main/images/salads.jpg", width=500)
+        st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/salads.jpg", width=500)
 
 # =================================
 # SECCIÓN: LOGÍSTICA
@@ -207,25 +194,6 @@ elif menu == "🚛 Logística":
         **Warehousing:** Querétaro cold storage and Laredo, TX for customs inspection.  
         **Cross-Docking:** Used at Laredo hub to consolidate and accelerate shipments.  
         **Distribution:** To regional warehouses or directly to clients in U.S. and Canada.  
-        """
-    )
-
-    st.subheader("Why Cross-Docking is Used")
-    st.markdown(
-        """
-        - **Consolidation:** Groups multiple small shipments into larger, efficient loads.  
-        - **Flow Acceleration:** Minimizes storage, speeds up deliveries.  
-        - **Inventory Reduction:** Reduces holding costs and lead time.  
-        """
-    )
-
-    st.subheader("Transport Modes")
-    st.markdown(
-        """
-        **Land (Refrigerated Trucking):**  
-        - Cost-effective for North America (Mexico–U.S.–Canada).  
-        - Transit: 1.5 days to Laredo, +3–5 days to final hubs.  
-        - Reliable temperature control for perishable goods.
         """
     )
 
@@ -247,7 +215,6 @@ elif menu == "💰 Finanzas":
         - Keep buffer inventory near border (McAllen or Laredo).  
         """
     )
-    st.image("https://raw.githubusercontent.com/tu_usuario/tu_repo/main/images/supply_chain_diagram.png", caption="Supply Chain Diagram")
 
 # =================================
 # SECCIÓN: CONCLUSIÓN
