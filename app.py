@@ -32,7 +32,7 @@ if menu == "🏠 Inicio":
     )
 
     st.markdown("<h1 style='text-align:center;'>Fresh Aurora Foods</h1>", unsafe_allow_html=True)
-    st.image("https://raw.githubusercontent.com/tu_usuario/tu_repo/main/images/logo.png", width=350)
+    st.image("https://github.com/gemelogascon-lang/cross-docking-app/blob/main/images/logo.png", width=350)
     st.markdown("<hr>", unsafe_allow_html=True)
 
     st.markdown("<h2 style='text-align:center;'>History</h2>", unsafe_allow_html=True)
