@@ -19,17 +19,24 @@ menu = st.sidebar.radio(
 # =================================
 if menu == "🏠 Inicio":
     # Estilo centrado
-    st.markdown(
-        """
-        <style>
-        .centered {
-            text-align: center;
-            font-size: 18px;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
+   st.markdown(
+    """
+    <style>
+    .banner-container {
+        width: 100%;
+        height: 280px; /* Ajusta la altura según el tamaño de tu imagen */
+        background-image: url('https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/logo.png');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    </style>
+
+    <div class="banner-container"></div>
+    """,
+    unsafe_allow_html=True
+)
 
     st.markdown("<h1 style='text-align:center;'>Fresh Aurora Foods</h1>", unsafe_allow_html=True)
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/logo.png", width=400)
