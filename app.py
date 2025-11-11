@@ -18,19 +18,22 @@ menu = st.sidebar.radio(
 # SECCIÓN: INICIO
 # =================================
 if menu == "🏠 Inicio":
-    # --- Banner tipo portada sin texto ---
+    # --- Banner tipo portada (sin texto y sin recortes) ---
     st.markdown(
         """
         <style>
         .hero {
             position: relative;
             width: 100%;
-            height: 300px;
-            background-image: url('https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/logo.png');
-            background-size: cover;
-            background-position: center;
-            border-radius: 10px;
+            height: auto;
+            display: flex;
+            justify-content: center;
             margin-bottom: 40px;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
         .centered {
             text-align: center;
@@ -39,13 +42,14 @@ if menu == "🏠 Inicio":
         }
         </style>
 
-        <div class="hero"></div>
+        <div class="hero">
+            <img src="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/logo.png" alt="Fresh Aurora Foods banner">
+        </div>
         """,
         unsafe_allow_html=True
     )
 
-    # --- Título principal ---
-    st.markdown("<h1 style='text-align:center;'>Fresh Aurora Foods</h1>", unsafe_allow_html=True)
+    # --- Quitamos el título porque ya está en la imagen ---
     st.markdown("---")
 
     # --- Textos centrados ---
