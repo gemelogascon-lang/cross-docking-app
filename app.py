@@ -11,14 +11,13 @@ st.set_page_config(page_title="Fresh Aurora Foods", page_icon="🥑", layout="wi
 st.sidebar.title("Menú de Navegación")
 menu = st.sidebar.radio(
     "Ir a:",
-    ["🏠 Inicio", "🥭 Productos", "🚛 Logística", "💰 Finanzas", "🧾 Conclusión"]
+    ["🏠 Inicio", "🥭 Productos", "🚛 Logística", "💰 Finanzas", "🧾 Conclusión", "📊 Descargar"]
 )
 
 # =================================
 # SECCIÓN: INICIO
 # =================================
 if menu == "🏠 Inicio":
-    # --- Banner tipo portada (sin texto y sin recortes) ---
     st.markdown(
         """
         <style>
@@ -49,7 +48,6 @@ if menu == "🏠 Inicio":
         unsafe_allow_html=True
     )
 
-    # --- Quitamos el título porque ya está en la imagen ---
     st.markdown("---")
 
     # --- Textos centrados ---
@@ -244,4 +242,36 @@ elif menu == "🧾 Conclusión":
         By combining refrigerated trucking with strategic cross-docking, we deliver products  
         in the best possible condition — fresh, fast, and reliable.
         """
+    )
+
+# =================================
+# NUEVA SECCIÓN: DESCARGAR
+# =================================
+elif menu == "📊 Descargar":
+    st.title("Descargar")
+
+    # ---- SECCIÓN EXCEL ----
+    st.markdown("<h3 style='color:green;'>Aquí podrás consultar nuestro Excel con la información requerida</h3>", unsafe_allow_html=True)
+    st.write("")
+    st.markdown(
+        """
+        <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/files/informacion.xlsx" download>
+            <button style="background-color:green;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">📗 Descargar Excel</button>
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown("---")
+
+    # ---- SECCIÓN PYTHON APP ----
+    st.markdown("<h3 style='color:blue;'>Aquí puedes consultar nuestro código de Python (app.py)</h3>", unsafe_allow_html=True)
+    st.write("")
+    st.markdown(
+        """
+        <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/files/codigo_python.docx" download>
+            <button style="background-color:yellow;color:blue;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">🐍 Descargar Código Python</button>
+        </a>
+        """,
+        unsafe_allow_html=True
     )
