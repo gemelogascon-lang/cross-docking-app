@@ -149,8 +149,7 @@ elif menu == "🥭 Productos":
             """
         )
     with col2:
-        st.image("st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/aguacate.png", width=500)
-", width=500)
+       st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/aguacate.png", width=500)
 
     st.markdown("---")
 
