@@ -269,7 +269,7 @@ elif menu == "📊 Descargar":
     st.write("")
     st.markdown(
         """
-        <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/files/codigo_python.docx" download>
+        <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/files/app.py" download>
             <button style="background-color:yellow;color:blue;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">🐍 Descargar Código Python</button>
         </a>
         """,
