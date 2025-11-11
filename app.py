@@ -197,7 +197,7 @@ menu = st.sidebar.radio(
 # =================================
 # SECCIÓN: INICIO
 # =================================
-if menu == "🏠 Inicio":
+if menu == "🏠 Home":
     st.markdown(
         """
         <style>
@@ -307,7 +307,7 @@ if menu == "🏠 Inicio":
 # =================================
 # SECCIÓN: PRODUCTOS
 # =================================
-elif menu == "🥭 Productos":
+elif menu == "🥭 Products":
     st.title("Our Products")
 
     # PRODUCTO 1 – FROZEN AVOCADO PULP
@@ -565,7 +565,7 @@ elif menu == "🥭 Productos":
 # =================================
 # SECCIÓN: LOGÍSTICA (COMPLETA DEL PDF)
 # =================================
-elif menu == "🚛 Logística":
+elif menu == "🚛 Logistics":
     st.title("Supply Chain & Logistics")
 
     st.markdown("### SCM & ILS Components Description")
@@ -629,7 +629,7 @@ elif menu == "🚛 Logística":
 # =================================
 # SECCIÓN: FINANZAS
 # =================================
-elif menu == "💰 Finanzas":
+elif menu == "💰 Finance":
     st.title("Financial & Operational Considerations")
     st.markdown(
         """
@@ -662,7 +662,7 @@ elif menu == "💰 Finanzas":
 # =================================
 # SECCIÓN: CONCLUSIÓN
 # =================================
-elif menu == "🧾 Conclusión":
+elif menu == "🧾 Conslusion":
     st.title("Conclusion")
     st.markdown(
         """
@@ -678,8 +678,8 @@ elif menu == "🧾 Conclusión":
 # =================================
 # SECCIÓN: DESCARGAR
 # =================================
-elif menu == "📊 Descargar":
-    st.title("Descargar")
+elif menu == "📊 Downloads":
+    st.title("Downloads")
 
     # ---- SECCIÓN EXCEL ----
     st.markdown("<h3 style='color:green;'>Aquí podrás consultar nuestro Excel con la información requerida</h3>", unsafe_allow_html=True)
