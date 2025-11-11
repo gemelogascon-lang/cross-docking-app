@@ -132,9 +132,8 @@ if menu == "🏠 Inicio":
 elif menu == "🥭 Productos":
     st.title("Our Products")
 
-    # ✅ PRODUCTO 1 ACTUALIZADO
+    # PRODUCTO 1 (avocado_pulp.jpg)
     col1, col2 = st.columns(2, gap="large")
-
     with col1:
         st.subheader("Frozen Avocado Pulp 🥑")
         st.markdown(
@@ -157,7 +156,6 @@ elif menu == "🥭 Productos":
 
     # PRODUCTO 2
     col1, col2 = st.columns(2, gap="large")
-
     with col1:
         st.subheader("Mango Cubes IQF 🥭")
         st.markdown(
@@ -179,7 +177,6 @@ elif menu == "🥭 Productos":
 
     # PRODUCTO 3
     col1, col2 = st.columns(2, gap="large")
-
     with col1:
         st.subheader("Ready-to-Eat Salads 🥬")
         st.markdown(
@@ -198,18 +195,66 @@ elif menu == "🥭 Productos":
         st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/salads.jpg", width=500)
 
 # =================================
-# SECCIÓN: LOGÍSTICA
+# SECCIÓN: LOGÍSTICA (COMPLETA DEL PDF)
 # =================================
 elif menu == "🚛 Logística":
     st.title("Supply Chain & Logistics")
+
+    st.markdown("### SCM & ILS Components Description")
+    st.table({
+        "Component": [
+            "Procurement", "Processing & Packaging", "Cold Chain Transport", "Warehousing",
+            "Cross-Docking", "Customs & 3PL", "Distribution"
+        ],
+        "Description": [
+            "Sourcing of fresh produce from farms in Michoacán and Jalisco, including avocados, mangoes, and greens, ensuring consistent supply.",
+            "HACCP-certified facility in Querétaro handles processing (pulping, IQF freezing) and packaging, maintaining quality standards.",
+            "Products are transported in refrigerated trucks, maintaining -18°C (frozen) or 2–4°C (salads) during shipment.",
+            "Cold storage in Querétaro for products, and temporary storage at Laredo, TX, for customs inspection and redistribution.",
+            "Used at Laredo, TX, to consolidate shipments, reduce inventory holding, and speed up flow from warehouse to clients.",
+            "Third-party logistics providers ensure customs clearance and border compliance for U.S. and Canadian shipments.",
+            "Products are distributed to regional warehouses or directly to retail and foodservice clients in the U.S. and Canada."
+        ]
+    })
+
+    st.markdown("---")
+    st.markdown("### Cross-Docking Importance")
     st.markdown(
         """
-        **Procurement:** Sourcing fresh produce from farms in Michoacán and Jalisco.  
-        **Processing & Packaging:** HACCP-certified facility in Querétaro for pulping, freezing, and packing.  
-        **Cold Chain Transport:** -18°C (frozen) or 2–4°C (fresh salads).  
-        **Warehousing:** Querétaro cold storage and Laredo, TX for customs inspection.  
-        **Cross-Docking:** Used at Laredo hub to consolidate and accelerate shipments.  
-        **Distribution:** To regional warehouses or directly to clients in U.S. and Canada.  
+        Cross-Docking is a critical part of the supply chain process, and it is used at the Laredo, TX hub.
+
+        **Why Cross-Docking is Used:**
+        - **Consolidation:** Allows for the grouping of multiple small shipments into larger, more efficient loads.  
+        - **Flow Acceleration:** Reduces the need for extended storage, ensuring faster delivery times to U.S. and Canadian markets.  
+        - **Inventory Reduction:** Minimizes holding time and reduces storage costs, leading to cost savings and faster movement of goods.
+        """
+    )
+
+    st.markdown("---")
+    st.markdown("### Transport Modes")
+    st.markdown(
+        """
+        **Land (Refrigerated Trucking)**  
+        - **Why Chosen:** Most cost-effective for the North American corridor (Mexico–U.S.–Canada).  
+        - **Time:** 1.5 days from Querétaro to Laredo, then 3–5 days to regional U.S. and Canadian hubs.  
+        - **Cost:** More economical compared to air transport, and faster than sea.  
+        - **Service:** Reliable, with temperature control for sensitive products.
+        """
+    )
+
+    st.markdown("---")
+    st.markdown("### Explanatory Paragraph")
+    st.markdown(
+        """
+        At **Aurora Fresh Foods**, our logistics network is meticulously designed to maintain the highest levels of freshness, quality, and efficiency throughout the supply chain.  
+        The journey begins with sourcing premium, fresh produce from the best farms in Michoacán and Jalisco, known for their rich agricultural heritage.  
+        Once the produce arrives, it is carefully processed and packaged in our state-of-the-art facility in Querétaro, where we maintain rigorous standards of hygiene and quality.  
+        After packaging, the products are transported using refrigerated trucks to ensure temperature control and prevent spoilage.
+
+        The next critical stage of the process occurs at our **cross-docking hub in Laredo, TX**.  
+        Here, shipments are efficiently consolidated, inspected, and redistributed to U.S. and Canadian clients with minimal delays.  
+        This cross-docking model is key to reducing inventory holding, accelerating the flow of goods, and minimizing storage costs.  
+        By combining refrigerated trucking with strategic cross-docking, we ensure that products are delivered to our customers in the best possible condition and at an optimal speed, reducing lead time while keeping logistics costs low.
         """
     )
 
@@ -279,3 +324,4 @@ elif menu == "📊 Descargar":
         """,
         unsafe_allow_html=True
     )
+
