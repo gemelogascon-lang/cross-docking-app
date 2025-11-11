@@ -150,85 +150,187 @@ if menu == "🏠 Inicio":
 elif menu == "🥭 Productos":
     st.title("Our Products")
 
-    # PRODUCTO 1
+    # PRODUCTO 1 – FROZEN AVOCADO PULP
+    st.subheader("Product 1 – Frozen Avocado Pulp 🥑")
+    st.markdown(
+        """
+        ### Description  
+        100% natural avocado pulp made from ripe Hass avocados grown in Michoacán, Mexico.  
+        Smooth texture and rich flavor ideal for guacamole, toast, dips, and foodservice use.  
+        Pasteurized, frozen, and packed under HACCP-certified conditions.
+        """,
+        unsafe_allow_html=True
+    )
+
     col1, col2 = st.columns(2, gap="large")
     with col1:
-        st.subheader("Frozen Avocado Pulp 🥑")
         st.markdown(
             """
-            100% natural avocado pulp made from ripe Hass avocados grown in Michoacán, Mexico.
-            Smooth texture and rich flavor ideal for guacamole, toast, dips, and foodservice use.
-            Pasteurized, frozen, and packed under HACCP-certified conditions.
+            ### Key Specifications  
+            - **Ingredients:** 100% Hass avocado pulp  
+            - **Processing:** Pasteurized and quick-frozen at -18°C  
+            - **Net Weight:** 500 g  
 
-            **Specifications:**
-            - Ingredients: 100% Hass avocado pulp  
-            - Processing: Pasteurized and quick-frozen at -18°C  
-            - Net Weight: 500 g  
-            - Packaging: Vacuum-sealed LDPE pouch / 20 units per carton  
-            - Dimensions: 20×15×3 cm  
+            **Packaging:**  
+            - Primary: Vacuum-sealed LDPE pouch  
+            - Secondary: Carton box (20 units per carton)  
+            - Dimensions (Retail Unit): 20 × 15 × 3 cm  
             - Gross Weight: 0.55 kg  
+
+            **Labeling Requirements:**  
+            - Product name, net weight, nutritional facts  
+            - Country of origin: Product of Mexico  
+            - Allergen statement: Contains no allergens  
+            - Storage instruction: Keep Frozen (-18°C)  
             - Shelf Life: 18 months (frozen, unopened)  
-            - USDA & FDA compliant, SENASICA certified  
+
+            **Regulatory / Export Constraints:**  
+            - USDA & FDA compliant  
+            - SENASICA phytosanitary certification for avocado exports  
+
+            **Target Markets & Channels:**  
+            - B2B: Foodservice distributors, restaurants, guacamole manufacturers  
+            - B2C: Retail frozen sections (supermarkets, specialty stores)  
+            - E-commerce: Online grocery and meal prep platforms  
+
+            **Incoterms & Transport:**  
+            - Preferred: DAP (Laredo TX, Dallas, Chicago) / FCA (Guadalajara or Querétaro plant)  
             - Transport Mode: Refrigerated trucking (-18°C continuous cold chain)  
-            - Estimated Selling Price: Wholesale $9.00 / 500g, Retail $11 / 500g  
+
+            **Estimated Selling Price:**  
+            - Wholesale (FCA): USD $9.00 per 500 g  
+            - Retail (DAP): USD $11 per 500 g  
             """
         )
     with col2:
-        st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/avocado_pulp1.jpg", width=500)
+        st.image(
+            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/avocado_pulp.jpg",
+            width=500,
+            caption="Frozen Avocado Pulp"
+        )
 
     st.markdown("---")
 
-    # PRODUCTO 2
+    # PRODUCTO 2 – MANGO CUBES IQF
+    st.subheader("Product 2 – Mango Cubes IQF (Individually Quick Frozen) 🥭")
+    st.markdown(
+        """
+        ### Description  
+        Naturally sweet, hand-cut mango cubes from Mexican Kent.  
+        Individually quick-frozen (IQF) to preserve flavor, color, and texture.  
+        Ideal for smoothies, desserts, and bulk foodservice use.
+        """,
+        unsafe_allow_html=True
+    )
+
     col1, col2 = st.columns(2, gap="large")
     with col1:
-        st.subheader("Mango Cubes IQF 🥭")
         st.markdown(
             """
-            Naturally sweet, hand-cut mango cubes from Mexican Kent. Individually quick-frozen (IQF)
-            to preserve flavor, color, and texture.
+            ### Key Specifications  
+            - **Ingredients:** 100% mango  
+            - **Processing:** Washed, diced, and IQF frozen at -18°C  
+            - **Net Weight:** 1 kg  
 
-            **Specifications:**
-            - Ingredients: 100% mango  
-            - Processing: Washed, diced, and IQF frozen at -18°C  
-            - Net Weight: 1 kg  
-            - Packaging: Transparent resealable LDPE pouch / 10 pouches per case  
-            - Dimensions: 25×20×6 cm  
+            **Packaging:**  
+            - Primary: Transparent resealable LDPE pouch  
+            - Secondary: Corrugated box (10 pouches per case)  
+            - Dimensions (Retail Unit): 25 × 20 × 6 cm  
             - Gross Weight: 1.05 kg  
+
+            **Labeling Requirements:**  
+            - Product name, net weight, nutritional information, batch code  
+            - “Keep Frozen (-18°C)”  
+            - Country of origin: Mexico  
             - Shelf Life: 24 months (frozen)  
-            - FDA & CFIA compliant, SENASICA certified  
+
+            **Regulatory / Export Constraints:**  
+            - Must meet U.S. FDA and CFIA labeling requirements  
+            - Phytosanitary certificate (SENASICA)  
+
+            **Target Markets & Channels:**  
+            - B2B: Smoothie producers, hotels, airlines, institutional catering  
+            - B2C: Supermarkets, health food stores, frozen fruit brands  
+            - E-commerce: Subscription boxes and meal prep kits  
+
+            **Incoterms & Transport:**  
+            - Preferred: FCA (Guadalajara or Michoacán processing facility) / DAP (Houston, Toronto)  
             - Transport Mode: Reefer trucking (-18°C)  
-            - Estimated Selling Price: Wholesale $12 / 1kg, Retail $15 / 1kg  
+
+            **Estimated Selling Price:**  
+            - Wholesale (FCA): USD $12 per 1 kg  
+            - Retail (DAP): USD $15 per 1 kg  
             """
         )
     with col2:
-        st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/mango_cubes.jpg", width=500)
+        st.image(
+            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/mango_cubes.jpg",
+            width=500,
+            caption="Mango Cubes IQF"
+        )
 
     st.markdown("---")
 
-    # PRODUCTO 3
+    # PRODUCTO 3 – READY-TO-EAT SALADS
+    st.subheader("Product 3 – Ready-to-Eat Salads 🥬")
+    st.markdown(
+        """
+        ### Description  
+        Fresh, pre-washed salad mixes combining Mexican leafy greens, cherry tomatoes, shredded carrots,  
+        and optional dressings. Designed for healthy convenience, with a crisp, garden-fresh taste.  
+        Packaged in recyclable bowls.
+        """,
+        unsafe_allow_html=True
+    )
+
     col1, col2 = st.columns(2, gap="large")
     with col1:
-        st.subheader("Ready-to-Eat Salads 🥬")
         st.markdown(
             """
-            Fresh, pre-washed salad mixes combining Mexican leafy greens, cherry tomatoes, shredded carrots,
-            and optional dressings. Designed for healthy convenience, with a crisp, garden-fresh taste.
+            ### Key Specifications  
+            - **Ingredients:** Lettuce, spinach, tomato, carrot, dressing (Separate)  
+            - **Processing:** Triple-washed, packed under modified atmosphere (MAP)  
+            - **Net Weight:** 250 g  
 
-            **Specifications:**
-            - Ingredients: Lettuce, spinach, tomato, carrot, dressing (separate)  
-            - Processing: Triple-washed, packed under modified atmosphere (MAP)  
-            - Net Weight: 250 g  
-            - Packaging: Clear PET bowl / Recyclable cardboard sleeve  
-            - Dimensions: 18×18×5 cm  
+            **Packaging:**  
+            - Primary: Clear PET bowl with tamper-proof lid  
+            - Secondary: Recyclable cardboard sleeve  
+            - Dimensions: 18 cm diameter × 5 cm height  
             - Gross Weight: 0.27 kg  
+
+            **Labeling Requirements:**  
+            - Product name, expiration date, ingredients, allergens  
+            - “Keep Refrigerated (2–4°C)”  
+            - Country of origin: Mexico  
             - Shelf Life: 5 days (refrigerated)  
-            - HACCP & ISO 22000 certified  
-            - Transport Mode: Refrigerated trucking (2–4°C)  
-            - Estimated Selling Price: Wholesale $2.50 / 250g, Retail $3.80 / 250g  
+
+            **Regulatory / Export Constraints:**  
+            - HACCP and ISO 22000 certification required  
+            - U.S. FDA registration for ready-to-eat produce  
+
+            **Target Markets & Channels:**  
+            - B2B: Corporate cafeterias, airlines, hotels, convenience chains  
+            - B2C: Urban consumers via supermarkets and grab-and-go fridges  
+            - E-commerce: Local meal delivery and healthy-living platforms  
+
+            **Incoterms & Transport:**  
+            - Preferred: DAP (Laredo or San Antonio distribution hub) / FCA (Querétaro plant)  
+            - Transport Mode: Refrigerated trucking (2–4°C, insulated crates)  
+
+            **Estimated Selling Price:**  
+            - Wholesale (FCA): USD $2.50 per 250 g  
+            - Retail (DAP): USD $3.80 per 250 g  
             """
         )
     with col2:
-        st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/salads.jpg", width=500)
+        st.image(
+            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/salads.jpg",
+            width=500,
+            caption="Ready-to-Eat Salads"
+        )
+
+    st.markdown("---")
+
 
     # --- TABLA AL FINAL ---
     st.markdown("---")
