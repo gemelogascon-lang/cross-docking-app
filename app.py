@@ -204,7 +204,7 @@ elif menu == "🥭 Productos":
         )
     with col2:
         st.image(
-            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/avocado_pulp.jpg",
+            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/avocado_pulp1.jpg",
             width=500,
             caption="Frozen Avocado Pulp"
         )
