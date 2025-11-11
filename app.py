@@ -662,7 +662,7 @@ elif menu == "💰 Finance":
 # =================================
 # SECCIÓN: CONCLUSIÓN
 # =================================
-elif menu == "🧾 Conslusion":
+elif menu == "🧾 Conclusion":
     st.title("Conclusion")
     st.markdown(
         """
