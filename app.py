@@ -1,24 +1,182 @@
 import streamlit as st
 
 # ---------------------------------
-# CONFIGURACIÓN DE LA PÁGINA
+# PAGE CONFIGURATION
 # ---------------------------------
 st.set_page_config(page_title="Fresh Aurora Foods", page_icon="🥑", layout="wide")
+
+# --- PROFESSIONAL DESIGN & STYLE ---
 st.markdown(
     """
     <style>
+    /* GLOBAL BACKGROUND AND FONT */
     .stApp {
         background-color: #f5ebd8;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #2c2c2c;
     }
+
+    /* SIDEBAR STYLING */
     section[data-testid="stSidebar"] {
         background-color: #f5ebd8;
+        border-right: 2px solid #e0d5b5;
     }
-    div[data-testid="stMarkdownContainer"] {
-        background-color: transparent;
+
+    /* HEADINGS */
+    h1, h2, h3 {
+        color: #2b3a2e;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 0.5px;
     }
-    table {
+
+    h2 {
+        border-bottom: 2px solid #a7c957;
+        display: inline-block;
+        padding-bottom: 4px;
+    }
+
+    /* DIVIDERS */
+    hr, .stHorizontalBlock {
+        border: none;
+        border-top: 2px solid #d6c7a1;
+        margin: 30px 0;
+    }
+
+    /* TEXT ALIGNMENT */
+    .centered {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.8;
+        color: #333333;
+    }
+
+    /* HERO (BANNER) IMAGE */
+    .hero {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        transition: transform 0.4s ease;
+    }
+
+    .hero img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        transition: transform 0.5s ease;
+    }
+
+    .hero img:hover {
+        transform: scale(1.02);
+    }
+
+    /* PRODUCT SECTIONS (CARDS) */
+    .product-section {
+        padding: 20px 30px;
         background-color: #fffaf0;
         border-radius: 10px;
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        margin-bottom: 30px;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .product-section:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
+    }
+
+    /* PRODUCT IMAGES */
+    .stImage img {
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* PRODUCT TABLE */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #f5ebd8;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #00000033;
+        padding: 10px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #e9dbc0;
+        color: #1f1f1f;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f8efe0;
+    }
+
+    tr:hover {
+        background-color: #f2e6d0;
+        transition: background-color 0.3s ease;
+    }
+
+    /* BUTTONS */
+    button, .stDownloadButton>button {
+        background-color: #a7c957 !important;
+        color: white !important;
+        border-radius: 8px !important;
+        border: none !important;
+        font-size: 16px !important;
+        font-weight: bold !important;
+        padding: 10px 25px !important;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+        background-color: #8ab34f !important;
+        transform: scale(1.05);
+    }
+
+    /* TEXT BODY */
+    p, li {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #2f2f2f;
+    }
+
+    /* ANIMATIONS */
+    .fade-in {
+        animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    /* DOWNLOAD SECTIONS */
+    .download-section {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .download-section h3 {
+        margin-bottom: 10px;
+        color: #204d66;
+    }
+
+    /* SIDEBAR TITLE */
+    [data-testid="stSidebarNav"]::before {
+        content: "Fresh Aurora Foods";
+        margin-left: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #2b3a2e;
     }
     </style>
     """,
@@ -26,12 +184,14 @@ st.markdown(
 )
 
 # ---------------------------------
-# MENÚ LATERAL
+# SIDEBAR MENU (IN ENGLISH)
 # ---------------------------------
-st.sidebar.title("Menú de Navegación")
+st.sidebar.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/logo.png", width=150)
+st.sidebar.title("Navigation Menu")
+st.sidebar.markdown("Select a section to explore:")
 menu = st.sidebar.radio(
-    "Ir a:",
-    ["🏠 Inicio", "🥭 Productos", "🚛 Logística", "💰 Finanzas", "🧾 Conclusión", "📊 Descargar"]
+    "",
+    ["🏠 Home", "🥭 Products", "🚛 Logistics", "💰 Finance", "🧾 Conclusion", "📊 Downloads"]
 )
 
 # =================================
