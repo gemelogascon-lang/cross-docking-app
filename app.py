@@ -384,7 +384,7 @@ elif menu == "💰 Finanzas":
     )
 
     # ---- SECCIÓN EXCEL ----
-    st.markdown("<h3 style='color:green;'>Aquí podrás consultar nuestro Excel con la información requerida</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color:green;'>Here you can access our Excel file with the required information.</h3>", unsafe_allow_html=True)
     st.write("")
     st.markdown(
         """
