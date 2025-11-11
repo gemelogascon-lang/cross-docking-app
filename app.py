@@ -18,6 +18,7 @@ menu = st.sidebar.radio(
 # SECCIÓN: INICIO
 # =================================
 if menu == "🏠 Inicio":
+    # --- Banner tipo portada (sin texto y sin recortes) ---
     st.markdown(
         """
         <style>
@@ -131,6 +132,7 @@ if menu == "🏠 Inicio":
 elif menu == "🥭 Productos":
     st.title("Our Products")
 
+    # ✅ PRODUCTO 1 ACTUALIZADO
     col1, col2 = st.columns(2, gap="large")
 
     with col1:
@@ -149,10 +151,11 @@ elif menu == "🥭 Productos":
             """
         )
     with col2:
-       st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/aguacate.png", width=500)
+        st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/avocado_pulp.jpg", width=500)
 
     st.markdown("---")
 
+    # PRODUCTO 2
     col1, col2 = st.columns(2, gap="large")
 
     with col1:
@@ -174,6 +177,7 @@ elif menu == "🥭 Productos":
 
     st.markdown("---")
 
+    # PRODUCTO 3
     col1, col2 = st.columns(2, gap="large")
 
     with col1:
@@ -245,7 +249,7 @@ elif menu == "🧾 Conclusión":
     )
 
 # =================================
-# NUEVA SECCIÓN: DESCARGAR
+# SECCIÓN: DESCARGAR
 # =================================
 elif menu == "📊 Descargar":
     st.title("Descargar")
