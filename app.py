@@ -4,6 +4,26 @@ import streamlit as st
 # CONFIGURACIÓN DE LA PÁGINA
 # ---------------------------------
 st.set_page_config(page_title="Fresh Aurora Foods", page_icon="🥑", layout="wide")
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #f5ebd8;
+    }
+    section[data-testid="stSidebar"] {
+        background-color: #f5ebd8;
+    }
+    div[data-testid="stMarkdownContainer"] {
+        background-color: transparent;
+    }
+    table {
+        background-color: #fffaf0;
+        border-radius: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # ---------------------------------
 # MENÚ LATERAL
