@@ -38,7 +38,6 @@ menu = st.sidebar.radio(
 # SECCIÓN: INICIO
 # =================================
 if menu == "🏠 Inicio":
-    # --- Banner tipo portada (sin texto y sin recortes) ---
     st.markdown(
         """
         <style>
@@ -71,7 +70,6 @@ if menu == "🏠 Inicio":
 
     st.markdown("---")
 
-    # --- Textos centrados ---
     st.markdown("<h2 style='text-align:center;'>History</h2>", unsafe_allow_html=True)
     st.markdown(
         """
@@ -152,7 +150,7 @@ if menu == "🏠 Inicio":
 elif menu == "🥭 Productos":
     st.title("Our Products")
 
-    # PRODUCTO 1 (avocado_pulp.jpg)
+    # PRODUCTO 1
     col1, col2 = st.columns(2, gap="large")
     with col1:
         st.subheader("Frozen Avocado Pulp 🥑")
@@ -163,10 +161,16 @@ elif menu == "🥭 Productos":
             Pasteurized, frozen, and packed under HACCP-certified conditions.
 
             **Specifications:**
-            - 100% Hass avocado pulp  
-            - Pasteurized & quick-frozen at -18°C  
-            - Shelf Life: 18 months  
+            - Ingredients: 100% Hass avocado pulp  
+            - Processing: Pasteurized and quick-frozen at -18°C  
+            - Net Weight: 500 g  
+            - Packaging: Vacuum-sealed LDPE pouch / 20 units per carton  
+            - Dimensions: 20×15×3 cm  
+            - Gross Weight: 0.55 kg  
+            - Shelf Life: 18 months (frozen, unopened)  
             - USDA & FDA compliant, SENASICA certified  
+            - Transport Mode: Refrigerated trucking (-18°C continuous cold chain)  
+            - Estimated Selling Price: Wholesale $9.00 / 500g, Retail $11 / 500g  
             """
         )
     with col2:
@@ -180,14 +184,20 @@ elif menu == "🥭 Productos":
         st.subheader("Mango Cubes IQF 🥭")
         st.markdown(
             """
-            Naturally sweet, hand-cut mango cubes from Mexican Kent.
-            Individually quick-frozen (IQF) to preserve flavor, color, and texture.
+            Naturally sweet, hand-cut mango cubes from Mexican Kent. Individually quick-frozen (IQF)
+            to preserve flavor, color, and texture.
 
             **Specifications:**
-            - 100% mango  
-            - IQF frozen at -18°C  
-            - Shelf Life: 24 months  
+            - Ingredients: 100% mango  
+            - Processing: Washed, diced, and IQF frozen at -18°C  
+            - Net Weight: 1 kg  
+            - Packaging: Transparent resealable LDPE pouch / 10 pouches per case  
+            - Dimensions: 25×20×6 cm  
+            - Gross Weight: 1.05 kg  
+            - Shelf Life: 24 months (frozen)  
             - FDA & CFIA compliant, SENASICA certified  
+            - Transport Mode: Reefer trucking (-18°C)  
+            - Estimated Selling Price: Wholesale $12 / 1kg, Retail $15 / 1kg  
             """
         )
     with col2:
@@ -202,18 +212,94 @@ elif menu == "🥭 Productos":
         st.markdown(
             """
             Fresh, pre-washed salad mixes combining Mexican leafy greens, cherry tomatoes, shredded carrots,
-            and optional dressings. Designed for healthy convenience.
+            and optional dressings. Designed for healthy convenience, with a crisp, garden-fresh taste.
 
             **Specifications:**
-            - Ingredients: Lettuce, spinach, tomato, carrot  
-            - Triple-washed, MAP packed  
-            - Shelf Life: 5 days refrigerated  
+            - Ingredients: Lettuce, spinach, tomato, carrot, dressing (separate)  
+            - Processing: Triple-washed, packed under modified atmosphere (MAP)  
+            - Net Weight: 250 g  
+            - Packaging: Clear PET bowl / Recyclable cardboard sleeve  
+            - Dimensions: 18×18×5 cm  
+            - Gross Weight: 0.27 kg  
+            - Shelf Life: 5 days (refrigerated)  
             - HACCP & ISO 22000 certified  
+            - Transport Mode: Refrigerated trucking (2–4°C)  
+            - Estimated Selling Price: Wholesale $2.50 / 250g, Retail $3.80 / 250g  
             """
         )
     with col2:
         st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/salads.jpg", width=500)
 
+    # --- TABLA AL FINAL ---
+    st.markdown("---")
+    st.markdown("### Product Logistics Summary Table")
+    st.markdown(
+        """
+        <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f5ebd8;
+        }
+        th, td {
+            border: 1px solid #00000033;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #e9dbc0;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f8efe0;
+        }
+        </style>
+
+        <table>
+            <tr>
+                <th>SKU</th>
+                <th>Product</th>
+                <th>Dimensions (cm)</th>
+                <th>Weight (kg)</th>
+                <th>Logistic Unit</th>
+                <th>Pallet Configuration</th>
+                <th>Temperature</th>
+                <th>Incoterm</th>
+            </tr>
+            <tr>
+                <td>AV500</td>
+                <td>Frozen Avocado Pulp</td>
+                <td>20×15×3</td>
+                <td>0.55</td>
+                <td>20 units/carton</td>
+                <td>10×6 = 60 cartons</td>
+                <td>-18°C</td>
+                <td>DAP / FCA</td>
+            </tr>
+            <tr>
+                <td>MG1000</td>
+                <td>Mango Cubes IQF</td>
+                <td>25×20×6</td>
+                <td>1.05</td>
+                <td>10 units/carton</td>
+                <td>10×8 = 80 cartons</td>
+                <td>-18°C</td>
+                <td>DAP / FCA</td>
+            </tr>
+            <tr>
+                <td>RS250</td>
+                <td>Ready-to-Eat Salad</td>
+                <td>18×18×5</td>
+                <td>0.27</td>
+                <td>24 units/crate</td>
+                <td>8×5 = 40 crates</td>
+                <td>2–4°C</td>
+                <td>DAP / FCA</td>
+            </tr>
+        </table>
+        """,
+        unsafe_allow_html=True
+    )
 # =================================
 # SECCIÓN: LOGÍSTICA (COMPLETA DEL PDF)
 # =================================
