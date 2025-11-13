@@ -698,62 +698,33 @@ elif menu == "🚛 Logistics":
     )
 
     # Datos exactos de la tabla AQUI EMPIEZA LA TABLA DE LA GRAFICA 
-    data = {
+      # --- Equipment Alternatives Comparison Table (Styled using st.table) ---
+    st.markdown("<h3 style='text-align:center;'><b>Warehouse Equipment Alternatives Comparison</b></h3>", unsafe_allow_html=True)
+
+    st.table({
         "Equipment Alternative": [
             "Selective Racks + Counterbalance Forklifts",
             "Drive-in Racks + Reach Trucks",
             "Conveyor + Picking System",
             "Automated Storage/Retrieval System (AS/RS)"
         ],
-        "Initial Investment (USD)": ["100,000", "150,000", "120,000", "500,000"],
-        "Maintenance Cost (USD/year)": ["5,000", "6,000", "7,000", "10,000"],
-        "Space Utilization (%)": ["75%", "85%", "90%", "95%"],
-        "Efficiency Rating (1–10)": [6, 8, 9, 10],
-        "Throughput (units/day)": [500, 400, 700, 800]
-    }
+        "Initial Investment (USD)": [
+            "100,000", "150,000", "120,000", "500,000"
+        ],
+        "Maintenance Cost (USD/year)": [
+            "5,000", "6,000", "7,000", "10,000"
+        ],
+        "Space Utilization (%)": [
+            "75%", "85%", "90%", "95%"
+        ],
+        "Efficiency Rating (1–10)": [
+            6, 8, 9, 10
+        ],
+        "Throughput (units/day)": [
+            500, 400, 700, 800
+        ]
+    })
 
-    df_equipment = pd.DataFrame(data)
-
-    # Título centrado
-    st.markdown("<h3 style='text-align:center;'><b>Warehouse Equipment Alternatives Comparison</b></h3>", unsafe_allow_html=True)
-
-    # --- Estilos personalizados (beige tipo la tabla anterior) ---
-    table_style = """
-    <style>
-        div[data-testid="stDataFrame"] div[role="grid"] {
-            background-color: #f5ebd8 !important;
-            border-radius: 10px !important;
-            border: 1px solid #e0d5b5 !important;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        div[data-testid="stDataFrame"] table {
-            background-color: #f5ebd8 !important;
-            color: #333 !important;
-            font-size: 16px !important;
-        }
-        div[data-testid="stDataFrame"] th {
-            background-color: #e9dbc0 !important;
-            color: #2b3a2e !important;
-            font-weight: bold !important;
-            text-align: center !important;
-            border-bottom: 2px solid #d6c7a1 !important;
-        }
-        div[data-testid="stDataFrame"] td {
-            border-bottom: 1px solid #e0d5b5 !important;
-            text-align: center !important;
-            vertical-align: middle !important;
-        }
-    </style>
-    """
-    st.markdown(table_style, unsafe_allow_html=True)
-
-    # Mostrar tabla interactiva sin filas extra
-    st.dataframe(
-        df_equipment,
-        use_container_width=True,  # se ajusta al ancho total
-        hide_index=True,           # quita la columna de índices
-        height=230                 # ajustada al número exacto de filas
-    )
 # =================================
 # SECCIÓN: FINANZAS
 # =================================
