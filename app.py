@@ -626,8 +626,7 @@ elif menu == "🚛 Logistics":
         """
     )
     
-        # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
-    # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
+      # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
     import pandas as pd
     import plotly.graph_objects as go
 
@@ -654,44 +653,47 @@ elif menu == "🚛 Logistics":
                 marker_color=colors,
                 text=df["Weighted Score"],
                 textposition="auto",
-                textfont=dict(size=22, color="#000000"),  # letras dentro de barras
+                textfont=dict(size=22, color="#000000"),
                 hovertemplate="<b>%{x}</b><br>Weighted Score: %{y}<extra></extra>"
             )
         ]
     )
 
-    # Layout ajustado (mitad de altura)
+    # Layout corregido (centrado real)
     fig.layout = go.Layout(
         title="<b>Warehouse Equipment Alternatives Comparison</b>",
-        title_font=dict(size=36, family="Segoe UI, sans-serif", color="#2b3a2e"),
-        title_x=0.5,
+        title_font=dict(size=32, family="Segoe UI, sans-serif", color="#2b3a2e"),
+        title_x=0.5,  # centra el título en el ancho de la gráfica
+        title_xanchor="center",  # asegura que el centro del título sea el punto de referencia
         xaxis=dict(
             title="<b>Warehouse Equipment Alternatives</b>",
-            title_font=dict(size=24),
+            title_font=dict(size=22),
             tickangle=35,
-            tickfont=dict(size=20),
+            tickfont=dict(size=18),
             showline=True,
             linecolor="#999",
+            automargin=True  # ✅ evita que las etiquetas largas empujen el título
         ),
         yaxis=dict(
             title="<b>Weighted Score</b>",
-            title_font=dict(size=24),
-            tickfont=dict(size=20),
+            title_font=dict(size=22),
+            tickfont=dict(size=18),
             range=[0, 1.05],
             showgrid=True,
             gridcolor="rgba(0,0,0,0.1)",
+            automargin=True
         ),
         plot_bgcolor="white",
         paper_bgcolor="#f5ebd8",
-        margin=dict(l=120, r=120, t=180, b=200),
-        height=700,   # ✅ mitad de la altura original
-        width=1800,   # mantiene proporción horizontal
+        margin=dict(l=100, r=100, t=160, b=200),  # márgenes balanceados
+        height=700,
+        width=1600
     )
 
-    # Mostrar gráfica (centrada, con herramientas visibles)
+    # Mostrar gráfica centrada y grande
     st.plotly_chart(
         fig,
-        use_container_width=False,  # mantiene tamaño fijo
+        use_container_width=False,
         config={"displayModeBar": True},
     )
 
