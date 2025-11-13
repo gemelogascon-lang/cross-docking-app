@@ -675,7 +675,8 @@ elif menu == "🚛 Logistics":
     )
 
     # Mostrar gráfica en Streamlit (más alta para espacio de herramientas)
-    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": True}, height=650
+    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": True}, height=650)
+                    
 # =================================
 # SECCIÓN: FINANZAS
 # =================================
