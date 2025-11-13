@@ -626,10 +626,9 @@ elif menu == "🚛 Logistics":
         """
     )
     
-    import pandas as pd
-    import matplotlib.pyplot as plt
+  import pandas as pd
 
-    # Data for chart and interactive table
+    # Dataset (the same data from your previous image)
     data = {
         "Warehouse Equipment Alternatives": [
             "Automated Storage/Retrieval System (AS/RS)",
@@ -637,32 +636,19 @@ elif menu == "🚛 Logistics":
             "Drive-in Racks + Reach Trucks",
             "Selective Racks + Counterbalance Forklifts"
         ],
-        "Weighted Score": [1.0, 0.9, 0.7, 0.65]
+        "Weighted Score": [1.00, 0.90, 0.70, 0.65]
     }
 
-    df_chart = pd.DataFrame(data)
+    df_alternatives = pd.DataFrame(data)
 
-    # --- Matplotlib Chart ---
-    fig, ax = plt.subplots(figsize=(7, 4))
-    colors = ["#A7D78D", "#F2C94C", "#56CCF2", "#F2994A"]
+    st.markdown("### Warehouse Equipment Alternatives Comparison Table")
 
-    ax.bar(df_chart["Warehouse Equipment Alternatives"], df_chart["Weighted Score"], color=colors)
-    ax.set_title("Warehouse Equipment Alternatives Comparison", fontsize=13, fontweight='bold', pad=15)
-    ax.set_ylabel("Weighted Score", fontsize=10)
-    ax.set_xlabel("Warehouse Equipment Alternatives", fontsize=10)
-    ax.set_ylim(0, 1.05)
-    ax.tick_params(axis='x', labelrotation=45, labelsize=9)
-    ax.grid(axis='y', linestyle='--', alpha=0.6)
-    plt.subplots_adjust(bottom=0.35)
-
-    st.pyplot(fig)
-
-    # --- Interactive Data Table (like BBVA view) ---
-    st.markdown("### Data Table: Warehouse Equipment Alternatives Comparison")
+    # Interactive Streamlit DataFrame (zoom, scroll, sortable)
     st.dataframe(
-        df_chart.style.format({"Weighted Score": "{:.2f}"}), 
-        use_container_width=True, 
-        hide_index=True
+        df_alternatives.style.format({"Weighted Score": "{:.2f}"}),  # formatting decimals
+        use_container_width=True,  # adjusts to container width
+        hide_index=True,           # hides default index numbers
+        height=220                 # makes table compact, not full-page
     )
     
 # =================================
