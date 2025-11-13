@@ -625,10 +625,10 @@ elif menu == "🚛 Logistics":
         By combining refrigerated trucking with strategic cross-docking, we ensure that products are delivered to our customers in the best possible condition and at an optimal speed, reducing lead time while keeping logistics costs low.
         """
     )
-    import pandas as pd
+  import pandas as pd
     import matplotlib.pyplot as plt
 
-    # Data (idéntico al de la imagen)
+    # Data for chart and interactive table
     data = {
         "Warehouse Equipment Alternatives": [
             "Automated Storage/Retrieval System (AS/RS)",
@@ -639,29 +639,30 @@ elif menu == "🚛 Logistics":
         "Weighted Score": [1.0, 0.9, 0.7, 0.65]
     }
 
-    df = pd.DataFrame(data)
+    df_chart = pd.DataFrame(data)
 
-    # Crear la figura
+    # --- Matplotlib Chart ---
     fig, ax = plt.subplots(figsize=(7, 4))
-    colors = ["#A7D78D", "#F2C94C", "#56CCF2", "#F2994A"]  # colores suaves como en la imagen
+    colors = ["#A7D78D", "#F2C94C", "#56CCF2", "#F2994A"]
 
-    ax.bar(df["Warehouse Equipment Alternatives"], df["Weighted Score"], color=colors)
-
-    # Título y etiquetas
-    ax.set_title("Warehouse Equipment Alternatives Comparison", fontsize=12, fontweight='bold', pad=15)
+    ax.bar(df_chart["Warehouse Equipment Alternatives"], df_chart["Weighted Score"], color=colors)
+    ax.set_title("Warehouse Equipment Alternatives Comparison", fontsize=13, fontweight='bold', pad=15)
     ax.set_ylabel("Weighted Score", fontsize=10)
     ax.set_xlabel("Warehouse Equipment Alternatives", fontsize=10)
-
-    # Ejes
     ax.set_ylim(0, 1.05)
     ax.tick_params(axis='x', labelrotation=45, labelsize=9)
     ax.grid(axis='y', linestyle='--', alpha=0.6)
-
-    # Margen inferior (para etiquetas largas)
     plt.subplots_adjust(bottom=0.35)
 
-    # Mostrar en Streamlit
     st.pyplot(fig)
+
+    # --- Interactive Data Table (like BBVA view) ---
+    st.markdown("### Data Table: Warehouse Equipment Alternatives Comparison")
+    st.dataframe(
+        df_chart.style.format({"Weighted Score": "{:.2f}"}), 
+        use_container_width=True, 
+        hide_index=True
+    )
     
 # =================================
 # SECCIÓN: FINANZAS
