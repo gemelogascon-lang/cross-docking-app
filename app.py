@@ -626,7 +626,7 @@ elif menu == "🚛 Logistics":
         """
     )
     
-  import pandas as pd
+    import pandas as pd
 
     # Dataset (the same data from your previous image)
     data = {
