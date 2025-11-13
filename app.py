@@ -696,7 +696,8 @@ elif menu == "🚛 Logistics":
         use_container_width=False,
         config={"displayModeBar": True},
     )
-# Datos exactos de la tabla
+
+    # Datos exactos de la tabla AQUI EMPIEZA LA TABLA DE LA GRAFICA 
     data = {
         "Equipment Alternative": [
             "Selective Racks + Counterbalance Forklifts",
@@ -713,15 +714,45 @@ elif menu == "🚛 Logistics":
 
     df_equipment = pd.DataFrame(data)
 
-    # Mostrar título centrado
-    st.markdown("<h3 style='text-align:center;'><b>Warehouse Equipment Alternatives Comparison Table</b></h3>", unsafe_allow_html=True)
+    # Título centrado
+    st.markdown("<h3 style='text-align:center;'><b>Warehouse Equipment Alternatives Comparison</b></h3>", unsafe_allow_html=True)
 
-    # Mostrar tabla interactiva (tipo la del BBVA)
+    # --- Estilos personalizados (beige tipo la tabla anterior) ---
+    table_style = """
+    <style>
+        div[data-testid="stDataFrame"] div[role="grid"] {
+            background-color: #f5ebd8 !important;
+            border-radius: 10px !important;
+            border: 1px solid #e0d5b5 !important;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        div[data-testid="stDataFrame"] table {
+            background-color: #f5ebd8 !important;
+            color: #333 !important;
+            font-size: 16px !important;
+        }
+        div[data-testid="stDataFrame"] th {
+            background-color: #e9dbc0 !important;
+            color: #2b3a2e !important;
+            font-weight: bold !important;
+            text-align: center !important;
+            border-bottom: 2px solid #d6c7a1 !important;
+        }
+        div[data-testid="stDataFrame"] td {
+            border-bottom: 1px solid #e0d5b5 !important;
+            text-align: center !important;
+            vertical-align: middle !important;
+        }
+    </style>
+    """
+    st.markdown(table_style, unsafe_allow_html=True)
+
+    # Mostrar tabla interactiva sin filas extra
     st.dataframe(
-        df_equipment.style.format(na_rep="-"),
-        use_container_width=True,
-        hide_index=True,
-        height=300  # altura compacta y visualmente balanceada
+        df_equipment,
+        use_container_width=True,  # se ajusta al ancho total
+        hide_index=True,           # quita la columna de índices
+        height=230                 # ajustada al número exacto de filas
     )
 # =================================
 # SECCIÓN: FINANZAS
