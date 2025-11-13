@@ -628,7 +628,7 @@ elif menu == "🚛 Logistics":
     
        # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
         # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
-   import pandas as pd
+    import pandas as pd
     import plotly.graph_objects as go
 
     # Datos idénticos a la gráfica original
