@@ -628,6 +628,7 @@ elif menu == "🚛 Logistics":
     
         # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
     # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
+       # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
     import pandas as pd
     import plotly.graph_objects as go
 
@@ -654,20 +655,20 @@ elif menu == "🚛 Logistics":
                 marker_color=colors,
                 text=df["Weighted Score"],
                 textposition="auto",
-                textfont=dict(size=22, color="#000000"),  # letras dentro de barras grandes
+                textfont=dict(size=22, color="#000000"),  # letras grandes dentro de las barras
                 hovertemplate="<b>%{x}</b><br>Weighted Score: %{y}<extra></extra>"
             )
         ]
     )
 
-    # Layout extendido verticalmente
+    # Forzar layout grande (pantalla completa)
     fig.layout = go.Layout(
         title="<b>Warehouse Equipment Alternatives Comparison</b>",
-        title_font=dict(size=32, family="Segoe UI, sans-serif", color="#2b3a2e"),
+        title_font=dict(size=36, family="Segoe UI, sans-serif", color="#2b3a2e"),
         title_x=0.5,
         xaxis=dict(
             title="<b>Warehouse Equipment Alternatives</b>",
-            title_font=dict(size=22),
+            title_font=dict(size=24),
             tickangle=35,
             tickfont=dict(size=20),
             showline=True,
@@ -675,7 +676,7 @@ elif menu == "🚛 Logistics":
         ),
         yaxis=dict(
             title="<b>Weighted Score</b>",
-            title_font=dict(size=22),
+            title_font=dict(size=24),
             tickfont=dict(size=20),
             range=[0, 1.05],
             showgrid=True,
@@ -683,15 +684,16 @@ elif menu == "🚛 Logistics":
         ),
         plot_bgcolor="white",
         paper_bgcolor="#f5ebd8",
-        margin=dict(l=120, r=120, t=180, b=250)  # márgenes amplios para respiración visual
+        margin=dict(l=120, r=120, t=200, b=250),  # Márgenes grandes para respiración
+        height=1400,  # ✅ altura interna del objeto plotly
+        width=1800,   # ✅ ancho interno (fuerza el render más grande)
     )
 
-    # Mostrar gráfica muy alta (pantalla completa)
+    # Mostrar la gráfica en Streamlit con configuración abierta
     st.plotly_chart(
         fig,
-        use_container_width=True,
+        use_container_width=False,  # ✅ evita que Streamlit limite el ancho
         config={"displayModeBar": True},
-        height=1200  # ✅ altura tipo dashboard grande
     )
 
 # =================================
