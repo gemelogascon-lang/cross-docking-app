@@ -628,6 +628,7 @@ elif menu == "🚛 Logistics":
     import pandas as pd
     import matplotlib.pyplot as plt
 
+    # Data (idéntico al de la imagen)
     data = {
         "Warehouse Equipment Alternatives": [
             "Automated Storage/Retrieval System (AS/RS)",
@@ -640,19 +641,28 @@ elif menu == "🚛 Logistics":
 
     df = pd.DataFrame(data)
 
-    fig, ax = plt.subplots(figsize=(8, 5))
-    colors = ['#A8E6A3', '#FFD86E', '#89C4F4', '#FFB974']
-    bars = ax.bar(df["Warehouse Equipment Alternatives"], df["Weighted Score"], color=colors)
+    # Crear la figura
+    fig, ax = plt.subplots(figsize=(7, 4))
+    colors = ["#A7D78D", "#F2C94C", "#56CCF2", "#F2994A"]  # colores suaves como en la imagen
 
-    ax.set_title("Warehouse Equipment Alternatives Comparison", fontsize=14, weight='bold')
-    ax.set_ylabel("Weighted Score", fontsize=12)
-    ax.set_xlabel("Warehouse Equipment Alternatives", fontsize=12)
-    ax.set_ylim(0, 1.1)
-    ax.tick_params(axis='x', labelrotation=45, labelsize=10)
+    ax.bar(df["Warehouse Equipment Alternatives"], df["Weighted Score"], color=colors)
+
+    # Título y etiquetas
+    ax.set_title("Warehouse Equipment Alternatives Comparison", fontsize=12, fontweight='bold', pad=15)
+    ax.set_ylabel("Weighted Score", fontsize=10)
+    ax.set_xlabel("Warehouse Equipment Alternatives", fontsize=10)
+
+    # Ejes
+    ax.set_ylim(0, 1.05)
+    ax.tick_params(axis='x', labelrotation=45, labelsize=9)
     ax.grid(axis='y', linestyle='--', alpha=0.6)
 
-    st.pyplot(fig)
+    # Margen inferior (para etiquetas largas)
+    plt.subplots_adjust(bottom=0.35)
 
+    # Mostrar en Streamlit
+    st.pyplot(fig)
+    
 # =================================
 # SECCIÓN: FINANZAS
 # =================================
