@@ -627,8 +627,9 @@ elif menu == "🚛 Logistics":
     )
     
     import pandas as pd
+    import plotly.graph_objects as go
 
-    # Dataset (the same data from your previous image)
+    # Datos idénticos a tu gráfica original
     data = {
         "Warehouse Equipment Alternatives": [
             "Automated Storage/Retrieval System (AS/RS)",
@@ -636,20 +637,66 @@ elif menu == "🚛 Logistics":
             "Drive-in Racks + Reach Trucks",
             "Selective Racks + Counterbalance Forklifts"
         ],
-        "Weighted Score": [1.00, 0.90, 0.70, 0.65]
+        "Weighted Score": [1.0, 0.9, 0.7, 0.65]
     }
 
-    df_alternatives = pd.DataFrame(data)
+    df = pd.DataFrame(data)
 
-    st.markdown("### Warehouse Equipment Alternatives Comparison Table")
+    # Colores suaves similares a los de la imagen original
+    colors = ["#A7D78D", "#F2C94C", "#56CCF2", "#F2994A"]
 
-    # Interactive Streamlit DataFrame (zoom, scroll, sortable)
-    st.dataframe(
-        df_alternatives.style.format({"Weighted Score": "{:.2f}"}),  # formatting decimals
-        use_container_width=True,  # adjusts to container width
-        hide_index=True,           # hides default index numbers
-        height=220                 # makes table compact, not full-page
+    # Crear figura con Plotly
+    fig = go.Figure(
+        data=[
+            go.Bar(
+                x=df["Warehouse Equipment Alternatives"],
+                y=df["Weighted Score"],
+                marker_color=colors,
+                text=df["Weighted Score"],
+                textposition="auto",
+                hovertemplate="<b>%{x}</b><br>Weighted Score: %{y}<extra></extra>"
+            )
+        ]
     )
+
+    # Layout moderno tipo dashboard financiero
+    fig.update_layout(
+        title=dict(
+            text="Warehouse Equipment Alternatives Comparison",
+            font=dict(size=20, family="Segoe UI, sans-serif", color="#2b3a2e"),
+            x=0.5
+        ),
+        xaxis=dict(
+            title="Warehouse Equipment Alternatives",
+            tickangle=45,
+            tickfont=dict(size=10),
+            showline=True,
+            linecolor="#999",
+        ),
+        yaxis=dict(
+            title="Weighted Score",
+            range=[0, 1.05],
+            showgrid=True,
+            gridcolor="rgba(0,0,0,0.1)",
+        ),
+        plot_bgcolor="white",
+        paper_bgcolor="#f5ebd8",
+        margin=dict(l=50, r=40, t=80, b=100),
+        height=450,
+    )
+
+    # Mostrar gráfica interactiva
+    st.plotly_chart(fig, use_container_width=True)
+
+    # --- Interactive Data Table (like in your finance app) ---
+    st.markdown("### Data Table: Warehouse Equipment Alternatives")
+    st.dataframe(
+        df.style.format({"Weighted Score": "{:.2f}"}),
+        use_container_width=True,
+        hide_index=True,
+        height=220
+    )
+
     
 # =================================
 # SECCIÓN: FINANZAS
