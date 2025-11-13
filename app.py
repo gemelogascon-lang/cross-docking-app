@@ -626,6 +626,7 @@ elif menu == "🚛 Logistics":
         """
     )
     
+       # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
     import pandas as pd
     import plotly.graph_objects as go
 
@@ -642,10 +643,10 @@ elif menu == "🚛 Logistics":
 
     df = pd.DataFrame(data)
 
-    # Colores suaves similares a los de la imagen original
+    # Colores suaves similares a la imagen original
     colors = ["#A7D78D", "#F2C94C", "#56CCF2", "#F2994A"]
 
-    # Crear figura con Plotly
+    # Crear figura interactiva con Plotly
     fig = go.Figure(
         data=[
             go.Bar(
@@ -659,43 +660,38 @@ elif menu == "🚛 Logistics":
         ]
     )
 
-    # Layout moderno tipo dashboard financiero
+    # Layout con títulos centrados y espacio para herramientas
     fig.update_layout(
         title=dict(
-            text="Warehouse Equipment Alternatives Comparison",
-            font=dict(size=20, family="Segoe UI, sans-serif", color="#2b3a2e"),
-            x=0.5
+            text="<b>Warehouse Equipment Alternatives Comparison</b>",
+            font=dict(size=22, family="Segoe UI, sans-serif", color="#2b3a2e"),
+            x=0.5,  # centra el título
+            xanchor="center"
         ),
         xaxis=dict(
-            title="Warehouse Equipment Alternatives",
+            title=dict(text="Warehouse Equipment Alternatives", standoff=15),
+            titlefont=dict(size=14),
             tickangle=45,
-            tickfont=dict(size=10),
+            tickfont=dict(size=11),
             showline=True,
             linecolor="#999",
         ),
         yaxis=dict(
             title="Weighted Score",
+            titlefont=dict(size=14),
             range=[0, 1.05],
             showgrid=True,
             gridcolor="rgba(0,0,0,0.1)",
         ),
         plot_bgcolor="white",
         paper_bgcolor="#f5ebd8",
-        margin=dict(l=50, r=40, t=80, b=100),
-        height=450,
+        margin=dict(l=60, r=50, t=90, b=120),  # más espacio arriba y abajo
+        height=500,  # más alto para que las herramientas tengan espacio
     )
 
     # Mostrar gráfica interactiva
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True, height=550)
 
-    # --- Interactive Data Table (like in your finance app) ---
-    st.markdown("### Data Table: Warehouse Equipment Alternatives")
-    st.dataframe(
-        df.style.format({"Weighted Score": "{:.2f}"}),
-        use_container_width=True,
-        hide_index=True,
-        height=220
-    )
 
     
 # =================================
