@@ -627,7 +627,7 @@ elif menu == "🚛 Logistics":
     )
     
         # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
-       # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
+    # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
     import pandas as pd
     import plotly.graph_objects as go
 
@@ -654,44 +654,44 @@ elif menu == "🚛 Logistics":
                 marker_color=colors,
                 text=df["Weighted Score"],
                 textposition="auto",
-                textfont=dict(size=20, color="#000000"),  # Texto dentro de barras más grande
+                textfont=dict(size=22, color="#000000"),  # letras dentro de barras grandes
                 hovertemplate="<b>%{x}</b><br>Weighted Score: %{y}<extra></extra>"
             )
         ]
     )
 
-    # Layout ajustado
-    fig.update_layout(
+    # Layout extendido verticalmente
+    fig.layout = go.Layout(
         title="<b>Warehouse Equipment Alternatives Comparison</b>",
-        title_font=dict(size=30, family="Segoe UI, sans-serif", color="#2b3a2e"),
-        title_x=0.5,  # Centrar título
+        title_font=dict(size=32, family="Segoe UI, sans-serif", color="#2b3a2e"),
+        title_x=0.5,
         xaxis=dict(
             title="<b>Warehouse Equipment Alternatives</b>",
-            title_font=dict(size=20),
-            tickangle=40,
-            tickfont=dict(size=18),  # Etiquetas del eje X más grandes
+            title_font=dict(size=22),
+            tickangle=35,
+            tickfont=dict(size=20),
             showline=True,
             linecolor="#999",
         ),
         yaxis=dict(
             title="<b>Weighted Score</b>",
-            title_font=dict(size=20),
-            tickfont=dict(size=18),  # Etiquetas Y grandes
+            title_font=dict(size=22),
+            tickfont=dict(size=20),
             range=[0, 1.05],
             showgrid=True,
             gridcolor="rgba(0,0,0,0.1)",
         ),
         plot_bgcolor="white",
         paper_bgcolor="#f5ebd8",
-        margin=dict(l=100, r=100, t=150, b=200),  # Márgenes amplios
+        margin=dict(l=120, r=120, t=180, b=250)  # márgenes amplios para respiración visual
     )
 
-    # Mostrar gráfica más alta
+    # Mostrar gráfica muy alta (pantalla completa)
     st.plotly_chart(
         fig,
         use_container_width=True,
         config={"displayModeBar": True},
-        height=950  # ✅ Altura aumentada (más alta y proporcionada)
+        height=1200  # ✅ altura tipo dashboard grande
     )
 
 # =================================
