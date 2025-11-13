@@ -627,12 +627,11 @@ elif menu == "🚛 Logistics":
     )
     
        # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
-       # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
-      # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
+        # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
     import pandas as pd
     import plotly.graph_objects as go
 
-    # Datos (idénticos a tu imagen original)
+    # Datos idénticos a tu gráfica original
     data = {
         "Warehouse Equipment Alternatives": [
             "Automated Storage/Retrieval System (AS/RS)",
@@ -644,62 +643,39 @@ elif menu == "🚛 Logistics":
     }
 
     df = pd.DataFrame(data)
-
-    # Colores suaves similares a la imagen original
     colors = ["#A7D78D", "#F2C94C", "#56CCF2", "#F2994A"]
 
-    # Crear figura con Plotly
-    fig = go.Figure(
-        data=[
-            go.Bar(
-                x=df["Warehouse Equipment Alternatives"],
-                y=df["Weighted Score"],
-                marker_color=colors,
-                text=df["Weighted Score"],
-                textposition="auto",
-                hovertemplate="<b>%{x}</b><br>Weighted Score: %{y}<extra></extra>"
-            )
-        ]
+    # Crear figura
+    fig = go.Figure()
+
+    # Agregar barras
+    fig.add_trace(
+        go.Bar(
+            x=df["Warehouse Equipment Alternatives"],
+            y=df["Weighted Score"],
+            marker_color=colors,
+            text=df["Weighted Score"],
+            textposition="auto",
+            hovertemplate="<b>%{x}</b><br>Weighted Score: %{y}<extra></extra>"
+        )
     )
 
-    # Layout compatible (sin anidación en title)
+    # Layout simple y 100 % compatible
     fig.update_layout(
         title="<b>Warehouse Equipment Alternatives Comparison</b>",
-        title_font=dict(size=22, family="Segoe UI, sans-serif", color="#2b3a2e"),
-        title_x=0.5,  # centra el título
-        xaxis=dict(
-            title="Warehouse Equipment Alternatives",
-            titlefont=dict(size=14),
-            tickangle=45,
-            tickfont=dict(size=11),
-            showline=True,
-            linecolor="#999",
-        ),
-        yaxis=dict(
-            title="Weighted Score",
-            titlefont=dict(size=14),
-            range=[0, 1.05],
-            showgrid=True,
-            gridcolor="rgba(0,0,0,0.1)",
-        ),
+        titlefont=dict(size=22, family="Segoe UI", color="#2b3a2e"),
+        xaxis_title="Warehouse Equipment Alternatives",
+        yaxis_title="Weighted Score",
+        xaxis_tickangle=45,
+        yaxis_range=[0, 1.05],
         plot_bgcolor="white",
         paper_bgcolor="#f5ebd8",
-        margin=dict(l=60, r=50, t=80, b=120)
+        margin=dict(l=70, r=60, t=100, b=160),
+        font=dict(size=12),
     )
 
-    # Mostrar gráfica interactiva con altura controlada
-    st.plotly_chart(fig, use_container_width=True, height=500)
-
-    # --- Interactive Data Table (Zoom / Scroll / Tools) ---
-    st.markdown("<h3 style='text-align:center;'><b>Data Table: Warehouse Equipment Alternatives</b></h3>", unsafe_allow_html=True)
-
-    st.dataframe(
-        df.style.format({"Weighted Score": "{:.2f}"}),  # formato de dos decimales
-        use_container_width=True,  # se adapta al ancho del contenedor
-        hide_index=True,           # oculta índice
-        height=260                 # más alta para ver bien las herramientas
-    )
-
+    # Mostrar gráfica en Streamlit (más alta para espacio de herramientas)
+    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": True}, height=650
 # =================================
 # SECCIÓN: FINANZAS
 # =================================
