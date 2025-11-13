@@ -625,6 +625,33 @@ elif menu == "🚛 Logistics":
         By combining refrigerated trucking with strategic cross-docking, we ensure that products are delivered to our customers in the best possible condition and at an optimal speed, reducing lead time while keeping logistics costs low.
         """
     )
+    import pandas as pd
+    import matplotlib.pyplot as plt
+
+    data = {
+        "Warehouse Equipment Alternatives": [
+            "Automated Storage/Retrieval System (AS/RS)",
+            "Conveyor + Picking System",
+            "Drive-in Racks + Reach Trucks",
+            "Selective Racks + Counterbalance Forklifts"
+        ],
+        "Weighted Score": [1.0, 0.9, 0.7, 0.65]
+    }
+
+    df = pd.DataFrame(data)
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+    colors = ['#A8E6A3', '#FFD86E', '#89C4F4', '#FFB974']
+    bars = ax.bar(df["Warehouse Equipment Alternatives"], df["Weighted Score"], color=colors)
+
+    ax.set_title("Warehouse Equipment Alternatives Comparison", fontsize=14, weight='bold')
+    ax.set_ylabel("Weighted Score", fontsize=12)
+    ax.set_xlabel("Warehouse Equipment Alternatives", fontsize=12)
+    ax.set_ylim(0, 1.1)
+    ax.tick_params(axis='x', labelrotation=45, labelsize=10)
+    ax.grid(axis='y', linestyle='--', alpha=0.6)
+
+    st.pyplot(fig)
 
 # =================================
 # SECCIÓN: FINANZAS
