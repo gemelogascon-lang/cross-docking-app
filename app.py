@@ -699,8 +699,6 @@ elif menu == "🚛 Logistics":
 
     # Datos exactos de la tabla AQUI EMPIEZA LA TABLA DE LA GRAFICA 
       # --- Equipment Alternatives Comparison Table (Styled using st.table) ---
-    st.markdown("<h3 style='text-align:center;'><b>Warehouse Equipment Alternatives Comparison</b></h3>", unsafe_allow_html=True)
-
     st.table({
         "Equipment Alternative": [
             "Selective Racks + Counterbalance Forklifts",
