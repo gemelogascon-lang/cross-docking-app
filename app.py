@@ -628,6 +628,7 @@ elif menu == "🚛 Logistics":
     
        # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
        # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
+      # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
     import pandas as pd
     import plotly.graph_objects as go
 
@@ -661,16 +662,13 @@ elif menu == "🚛 Logistics":
         ]
     )
 
-    # Layout con títulos centrados, altura adecuada y espacio para las herramientas
+    # Layout compatible (sin anidación en title)
     fig.update_layout(
-        title=dict(
-            text="<b>Warehouse Equipment Alternatives Comparison</b>",
-            font=dict(size=22, family="Segoe UI, sans-serif", color="#2b3a2e"),
-            x=0.5,  # Centra el título
-            xanchor="center"
-        ),
+        title="<b>Warehouse Equipment Alternatives Comparison</b>",
+        title_font=dict(size=22, family="Segoe UI, sans-serif", color="#2b3a2e"),
+        title_x=0.5,  # centra el título
         xaxis=dict(
-            title=dict(text="Warehouse Equipment Alternatives", standoff=15),
+            title="Warehouse Equipment Alternatives",
             titlefont=dict(size=14),
             tickangle=45,
             tickfont=dict(size=11),
@@ -686,7 +684,7 @@ elif menu == "🚛 Logistics":
         ),
         plot_bgcolor="white",
         paper_bgcolor="#f5ebd8",
-        margin=dict(l=60, r=50, t=80, b=120)  # Margen ajustado para espacio de herramientas
+        margin=dict(l=60, r=50, t=80, b=120)
     )
 
     # Mostrar gráfica interactiva con altura controlada
@@ -696,13 +694,12 @@ elif menu == "🚛 Logistics":
     st.markdown("<h3 style='text-align:center;'><b>Data Table: Warehouse Equipment Alternatives</b></h3>", unsafe_allow_html=True)
 
     st.dataframe(
-        df.style.format({"Weighted Score": "{:.2f}"}),  # Formato de dos decimales
-        use_container_width=True,  # Se adapta al ancho del contenedor
-        hide_index=True,           # Oculta la columna del índice
-        height=260                 # Un poco más alta para que se vean bien las herramientas
+        df.style.format({"Weighted Score": "{:.2f}"}),  # formato de dos decimales
+        use_container_width=True,  # se adapta al ancho del contenedor
+        hide_index=True,           # oculta índice
+        height=260                 # más alta para ver bien las herramientas
     )
 
-    
 # =================================
 # SECCIÓN: FINANZAS
 # =================================
