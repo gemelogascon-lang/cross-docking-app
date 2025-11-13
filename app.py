@@ -625,7 +625,8 @@ elif menu == "🚛 Logistics":
         By combining refrigerated trucking with strategic cross-docking, we ensure that products are delivered to our customers in the best possible condition and at an optimal speed, reducing lead time while keeping logistics costs low.
         """
     )
-  import pandas as pd
+    
+    import pandas as pd
     import matplotlib.pyplot as plt
 
     # Data for chart and interactive table
