@@ -627,10 +627,11 @@ elif menu == "🚛 Logistics":
     )
     
        # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
+       # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
     import pandas as pd
     import plotly.graph_objects as go
 
-    # Datos idénticos a tu gráfica original
+    # Datos (idénticos a tu imagen original)
     data = {
         "Warehouse Equipment Alternatives": [
             "Automated Storage/Retrieval System (AS/RS)",
@@ -646,7 +647,7 @@ elif menu == "🚛 Logistics":
     # Colores suaves similares a la imagen original
     colors = ["#A7D78D", "#F2C94C", "#56CCF2", "#F2994A"]
 
-    # Crear figura interactiva con Plotly
+    # Crear figura con Plotly
     fig = go.Figure(
         data=[
             go.Bar(
@@ -660,12 +661,12 @@ elif menu == "🚛 Logistics":
         ]
     )
 
-    # Layout con títulos centrados y espacio para herramientas
+    # Layout con títulos centrados, altura adecuada y espacio para las herramientas
     fig.update_layout(
         title=dict(
             text="<b>Warehouse Equipment Alternatives Comparison</b>",
             font=dict(size=22, family="Segoe UI, sans-serif", color="#2b3a2e"),
-            x=0.5,  # centra el título
+            x=0.5,  # Centra el título
             xanchor="center"
         ),
         xaxis=dict(
@@ -685,13 +686,21 @@ elif menu == "🚛 Logistics":
         ),
         plot_bgcolor="white",
         paper_bgcolor="#f5ebd8",
-        margin=dict(l=60, r=50, t=90, b=120),  # más espacio arriba y abajo
-        height=500,  # más alto para que las herramientas tengan espacio
+        margin=dict(l=60, r=50, t=80, b=120)  # Margen ajustado para espacio de herramientas
     )
 
-    # Mostrar gráfica interactiva
-    st.plotly_chart(fig, use_container_width=True, height=550)
+    # Mostrar gráfica interactiva con altura controlada
+    st.plotly_chart(fig, use_container_width=True, height=500)
 
+    # --- Interactive Data Table (Zoom / Scroll / Tools) ---
+    st.markdown("<h3 style='text-align:center;'><b>Data Table: Warehouse Equipment Alternatives</b></h3>", unsafe_allow_html=True)
+
+    st.dataframe(
+        df.style.format({"Weighted Score": "{:.2f}"}),  # Formato de dos decimales
+        use_container_width=True,  # Se adapta al ancho del contenedor
+        hide_index=True,           # Oculta la columna del índice
+        height=260                 # Un poco más alta para que se vean bien las herramientas
+    )
 
     
 # =================================
