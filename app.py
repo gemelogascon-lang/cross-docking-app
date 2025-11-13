@@ -628,7 +628,6 @@ elif menu == "🚛 Logistics":
     
         # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
     # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
-       # --- Interactive Plotly Bar Chart: Warehouse Equipment Alternatives ---
     import pandas as pd
     import plotly.graph_objects as go
 
@@ -655,13 +654,13 @@ elif menu == "🚛 Logistics":
                 marker_color=colors,
                 text=df["Weighted Score"],
                 textposition="auto",
-                textfont=dict(size=22, color="#000000"),  # letras grandes dentro de las barras
+                textfont=dict(size=22, color="#000000"),  # letras dentro de barras
                 hovertemplate="<b>%{x}</b><br>Weighted Score: %{y}<extra></extra>"
             )
         ]
     )
 
-    # Forzar layout grande (pantalla completa)
+    # Layout ajustado (mitad de altura)
     fig.layout = go.Layout(
         title="<b>Warehouse Equipment Alternatives Comparison</b>",
         title_font=dict(size=36, family="Segoe UI, sans-serif", color="#2b3a2e"),
@@ -684,15 +683,15 @@ elif menu == "🚛 Logistics":
         ),
         plot_bgcolor="white",
         paper_bgcolor="#f5ebd8",
-        margin=dict(l=120, r=120, t=200, b=250),  # Márgenes grandes para respiración
-        height=1400,  # ✅ altura interna del objeto plotly
-        width=1800,   # ✅ ancho interno (fuerza el render más grande)
+        margin=dict(l=120, r=120, t=180, b=200),
+        height=700,   # ✅ mitad de la altura original
+        width=1800,   # mantiene proporción horizontal
     )
 
-    # Mostrar la gráfica en Streamlit con configuración abierta
+    # Mostrar gráfica (centrada, con herramientas visibles)
     st.plotly_chart(
         fig,
-        use_container_width=False,  # ✅ evita que Streamlit limite el ancho
+        use_container_width=False,  # mantiene tamaño fijo
         config={"displayModeBar": True},
     )
 
