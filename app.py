@@ -631,7 +631,7 @@ elif menu == "🚛 Logistics":
     import pandas as pd
     import plotly.graph_objects as go
 
-    # Datos idénticos a tu gráfica original
+    # Datos
     data = {
         "Warehouse Equipment Alternatives": [
             "Automated Storage/Retrieval System (AS/RS)",
@@ -643,11 +643,9 @@ elif menu == "🚛 Logistics":
     }
 
     df = pd.DataFrame(data)
-
-    # Colores suaves similares a la imagen original
     colors = ["#A7D78D", "#F2C94C", "#56CCF2", "#F2994A"]
 
-    # Crear figura con Plotly
+    # Crear figura
     fig = go.Figure(
         data=[
             go.Bar(
@@ -656,44 +654,44 @@ elif menu == "🚛 Logistics":
                 marker_color=colors,
                 text=df["Weighted Score"],
                 textposition="auto",
-                textfont=dict(size=18, color="#000000"),  # ✅ Texto dentro de las barras más grande
+                textfont=dict(size=20, color="#000000"),  # Texto dentro de barras más grande
                 hovertemplate="<b>%{x}</b><br>Weighted Score: %{y}<extra></extra>"
             )
         ]
     )
 
-    # Layout con títulos centrados y más espacio para los controles
+    # Layout ajustado
     fig.update_layout(
         title="<b>Warehouse Equipment Alternatives Comparison</b>",
-        title_font=dict(size=28, family="Segoe UI, sans-serif", color="#2b3a2e"),  # ✅ Título más grande
-        title_x=0.5,
+        title_font=dict(size=30, family="Segoe UI, sans-serif", color="#2b3a2e"),
+        title_x=0.5,  # Centrar título
         xaxis=dict(
             title="<b>Warehouse Equipment Alternatives</b>",
             title_font=dict(size=20),
-            tickangle=40,  # levemente más vertical para legibilidad
-            tickfont=dict(size=16, family="Segoe UI"),  # ✅ etiquetas X más grandes
+            tickangle=40,
+            tickfont=dict(size=18),  # Etiquetas del eje X más grandes
             showline=True,
             linecolor="#999",
         ),
         yaxis=dict(
             title="<b>Weighted Score</b>",
             title_font=dict(size=20),
-            tickfont=dict(size=16),
+            tickfont=dict(size=18),  # Etiquetas Y grandes
             range=[0, 1.05],
             showgrid=True,
             gridcolor="rgba(0,0,0,0.1)",
         ),
         plot_bgcolor="white",
         paper_bgcolor="#f5ebd8",
-        margin=dict(l=80, r=80, t=120, b=200),  # ✅ más espacio arriba y abajo
+        margin=dict(l=100, r=100, t=150, b=200),  # Márgenes amplios
     )
 
-    # Mostrar gráfica interactiva (altura mayor)
+    # Mostrar gráfica más alta
     st.plotly_chart(
         fig,
         use_container_width=True,
         config={"displayModeBar": True},
-        height=800  # ✅ más alta para que las herramientas no se encimen
+        height=950  # ✅ Altura aumentada (más alta y proporcionada)
     )
 
 # =================================
