@@ -696,7 +696,33 @@ elif menu == "🚛 Logistics":
         use_container_width=False,
         config={"displayModeBar": True},
     )
+# Datos exactos de la tabla
+    data = {
+        "Equipment Alternative": [
+            "Selective Racks + Counterbalance Forklifts",
+            "Drive-in Racks + Reach Trucks",
+            "Conveyor + Picking System",
+            "Automated Storage/Retrieval System (AS/RS)"
+        ],
+        "Initial Investment (USD)": ["100,000", "150,000", "120,000", "500,000"],
+        "Maintenance Cost (USD/year)": ["5,000", "6,000", "7,000", "10,000"],
+        "Space Utilization (%)": ["75%", "85%", "90%", "95%"],
+        "Efficiency Rating (1–10)": [6, 8, 9, 10],
+        "Throughput (units/day)": [500, 400, 700, 800]
+    }
 
+    df_equipment = pd.DataFrame(data)
+
+    # Mostrar título centrado
+    st.markdown("<h3 style='text-align:center;'><b>Warehouse Equipment Alternatives Comparison Table</b></h3>", unsafe_allow_html=True)
+
+    # Mostrar tabla interactiva (tipo la del BBVA)
+    st.dataframe(
+        df_equipment.style.format(na_rep="-"),
+        use_container_width=True,
+        hide_index=True,
+        height=300  # altura compacta y visualmente balanceada
+    )
 # =================================
 # SECCIÓN: FINANZAS
 # =================================
