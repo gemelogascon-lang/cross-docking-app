@@ -812,6 +812,15 @@ elif menu == "🚛 Logistics":
     })
 
     st.markdown("---")
+        # --- KPI’S SECTION ---
+    st.markdown("<h2 style='text-align:center; color:#2b3a2e;'><b>KPI’s: The Foundation of Continuous Improvement with Our Clients</b></h2>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align:center; font-size:17px;'>We continuously monitor, analyze, and optimize our logistics processes to ensure better service performance and customer satisfaction.</p>", unsafe_allow_html=True)
+
+    # Display the three KPI images (one below the other)
+    st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenario1.png", caption="Scenario 1 - Productivity KPIs", use_container_width=True)
+    st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenario2.png", caption="Scenario 2 - Efficiency KPIs", use_container_width=True)
+    st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenario3.png", caption="Scenario 3 - Global Performance KPIs", use_container_width=True)
+
 
 # =================================
 # SECCIÓN: FINANZAS
