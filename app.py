@@ -914,7 +914,7 @@ elif menu == "🧾 Conclusion":
         This model minimizes storage, reduces costs, and ensures faster deliveries.  
 
         By combining refrigerated trucking with strategic cross-docking, we deliver products  
-        in the best possible condition — fresh, fast, and reliable.
+        in the best possible condition / fresh, fast, and reliable.
         """
     )
 
