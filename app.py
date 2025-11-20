@@ -860,6 +860,23 @@ elif menu == "💰 Finance":
             """,
             unsafe_allow_html=True
         )
+
+        # Conclusiones
+        st.markdown("<h4 style='text-align:center; color:#2b3a2e;'>Conclusions</h4>", unsafe_allow_html=True)
+        st.markdown(
+            """
+            <p style='text-align:justify; font-size:16px; color:#333333;'>
+            The <b>profit margin</b> would drop to <b>5%</b> if all of these 5 effects occurred simultaneously.  
+            A key takeaway is the <b>significant impact freight costs</b> have on overall profitability — indicating that
+            freight optimization and negotiation should be a priority to <b>maximize profits</b>.
+            </p>
+            """,
+            unsafe_allow_html=True
+        )
+
+    # END OF PROFIT AND LOSSES SECTION
+    st.markdown("---")
+
  # =================================
     # COST ANALYSIS SECTION
     # =================================
@@ -930,23 +947,7 @@ elif menu == "💰 Finance":
             use_container_width=True
         )
 #FINAL DE ANALISIS DE COSTOS POR PRODUCTO
-
-        # Conclusiones
-        st.markdown("<h4 style='text-align:center; color:#2b3a2e;'>Conclusions</h4>", unsafe_allow_html=True)
-        st.markdown(
-            """
-            <p style='text-align:justify; font-size:16px; color:#333333;'>
-            The <b>profit margin</b> would drop to <b>5%</b> if all of these 5 effects occurred simultaneously.  
-            A key takeaway is the <b>significant impact freight costs</b> have on overall profitability — indicating that
-            freight optimization and negotiation should be a priority to <b>maximize profits</b>.
-            </p>
-            """,
-            unsafe_allow_html=True
-        )
-
-    # END OF PROFIT AND LOSSES SECTION
-    st.markdown("---")
-
+    
     # --- FINANCIAL & OPERATIONAL CONSIDERATIONS ---
     st.title("Financial & Operational Considerations")
     st.markdown(
