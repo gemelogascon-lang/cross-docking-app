@@ -820,6 +820,77 @@ elif menu == "🚛 Logistics":
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios1.png", caption="Scenario 1 - Productivity KPIs", use_container_width=True)
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios2.png", caption="Scenario 2 - Efficiency KPIs", use_container_width=True)
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios3.png", caption="Scenario 3 - Global Performance KPIs", use_container_width=True)
+    
+    # =================================
+    # COST ANALYSIS SECTION
+    # =================================
+    st.markdown("<h2 style='text-align:center; color:#2b3a2e; font-size:34px;'><b>Cost Analysis by Product</b></h2>", unsafe_allow_html=True)
+
+    # -------- FIRST ROW: Cost1 and Cost2 --------
+    col1, col2 = st.columns(2, gap="large")
+
+    # LEFT SIDE (Cost1)
+    with col1:
+        st.image(
+            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Cost1.png",
+            caption="Avocado Cost Impact",
+            use_container_width=True
+        )
+        st.markdown(
+            """
+            <p style='font-size:16px; color:#333333; margin-top:10px;'>
+            <b>Impact:</b> Increase in freight price (20%) = <b>$0.14</b><br>
+            <i>*Since there are 50,000 pieces per truck.</i>
+            </p>
+            """,
+            unsafe_allow_html=True
+        )
+
+    # RIGHT SIDE (Cost2)
+    with col2:
+        st.image(
+            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Cost2.png",
+            caption="Mango Cubes Cost Impact",
+            use_container_width=True
+        )
+        st.markdown(
+            """
+            <p style='font-size:16px; color:#333333; margin-top:10px;'>
+            <b>Impact:</b> Increase in freight price (20%) = <b>$0.35</b><br>
+            <i>*Since there are 20,000 pieces per truck.</i>
+            </p>
+            """,
+            unsafe_allow_html=True
+        )
+
+    st.markdown("---")
+
+    # -------- SECOND ROW: Cost3 (image on right, text on left) --------
+    col_left, col_right = st.columns(2, gap="large")
+
+    # LEFT SIDE (Text)
+    with col_left:
+        st.markdown(
+            """
+            <h4 style='color:#2b3a2e;'>Salads Cost Impact</h4>
+            <p style='font-size:16px; color:#333333; margin-top:10px;'>
+            <b>Impact:</b> Increase in freight price (20%) = <b>$0.21</b><br>
+            <i>*Since there are 30 units per truck.</i><br><br>
+            - Cheaper transport for lighter weight.<br>
+            - Product with the lowest profit margin.
+            </p>
+            """,
+            unsafe_allow_html=True
+        )
+
+    # RIGHT SIDE (Cost3 image)
+    with col_right:
+        st.image(
+            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Cost3.png",
+            caption="Salads Cost Impact",
+            use_container_width=True
+        )
+#FINAL DE ANALISIS DE COSTOS POR PRODUCTO
 
 elif menu == "💰 Finance":
     # --- PROFIT AND LOSSES SECTION (SIDE BY SIDE) ---
