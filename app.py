@@ -824,6 +824,51 @@ elif menu == "🚛 Logistics":
 # =================================
 # SECCIÓN: FINANZAS
 # =================================
+    # --- PROFIT AND LOSSES SECTION ---
+    st.markdown("<h2 style='text-align:center; color:#2b3a2e;'><b>Profit and Losses</b></h2>", unsafe_allow_html=True)
+
+    # Primera imagen - Profit
+    st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Profit.png", caption="Profit and Losses Overview", use_container_width=True)
+
+    st.markdown("---")
+
+    # --- PROFIT AND LOSSES WITH SCENARIOS SECTION ---
+    st.markdown("<h2 style='text-align:center; color:#2b3a2e;'><b>Profit and Losses with Scenarios</b></h2>", unsafe_allow_html=True)
+
+    # Tabla de los 5 impactos con colores
+    st.markdown("<h4 style='color:#2b3a2e;'>5 IMPACTS</h4>", unsafe_allow_html=True)
+
+    st.markdown(
+        """
+        <div style="background-color:#E8F5E9; padding:8px; font-size:15px;"><b>1 - INCREASE OF 20% IN THE FREIGHT FOR ALL THE PRODUCTS</b></div>
+        <div style="background-color:#E3F2FD; padding:8px; font-size:15px;"><b>2 - DOUBLE AMOUNT INVESTED IN EQUIPMENT, RESULTING IN DOUBLE DEPRECIATION</b></div>
+        <div style="background-color:#FFEB3B; padding:8px; font-size:15px;"><b>3 - INCREASE IN 30% IN INDIRECT LABOR</b></div>
+        <div style="background-color:#CFD8DC; padding:8px; font-size:15px;"><b>4 - INCREASE IN 20% IN INSURANCE</b></div>
+        <div style="background-color:#0288D1; padding:8px; font-size:15px; color:white;"><b>5 - PAYING HIGHER RENT BY 10%</b></div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # Imagen con escenarios - Profit2
+    st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Profit2.png", caption="Profit and Losses with Scenarios", use_container_width=True)
+
+    # Conclusiones
+    st.markdown("---")
+    st.markdown(
+        """
+        <h4 style='text-align:center; color:#2b3a2e;'>Conclusions</h4>
+        <p style='text-align:justify; font-size:16px; color:#333333;'>
+        Profit margin would drop to <b>5%</b> if all of these 5 effects happened. 
+        Something we conclude is the <b>high impact freights</b> have in our price, meaning that it is an area in which we can focus on 
+        <b>bargaining to maximize profits.</b>
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
+#END OF PROFIT AND LOSSES SECTION
+
 elif menu == "💰 Finance":
     st.title("Financial & Operational Considerations")
     st.markdown(
