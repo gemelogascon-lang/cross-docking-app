@@ -562,7 +562,7 @@ elif menu == "🥭 Products":
         """,
         unsafe_allow_html=True
     )
-=====
+#=====
 # SECCIÓN: LOGÍSTICA (COMPLETA DEL PDF)
 # =================================
 elif menu == "🚛 Logistics":
