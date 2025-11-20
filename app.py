@@ -722,6 +722,96 @@ elif menu == "🚛 Logistics":
             500, 400, 700, 800
         ]
     })
+#TABLA DE DIMENSIONES DEL CAMION
+    # --- Dimension Calculations Tables ---
+    st.markdown("<h3 style='text-align:center;'><b>Dimension Calculations per Product</b></h3>", unsafe_allow_html=True)
+
+    # ---------- AVOCADO ----------
+    st.markdown("### 🥑 Avocado")
+    st.table({
+        "Item": [
+            "TRUCK CAPACITY",
+            "BOX WEIGHT (20 BAGS)",
+            "BOX PER TRUCK",
+            "BOX DIMENSION 40×25×20 cm",
+            "TOTAL BOX DIMENSION",
+            "TRUCK CUBIC CAPACITY",
+            "ROOM LEFT",
+            "ACHIEVABLE!!",
+            "Total unit per truck"
+        ],
+        "Value": [
+            "25,000 KG",
+            "10 KG",
+            "2,500",
+            "0.02 M³",
+            "50.00 M³",
+            "90.00 M³",
+            "40.00 M³",
+            "✔️ ACHIEVABLE!!",
+            "50,000"
+        ]
+    })
+
+    st.markdown("---")
+
+    # ---------- MANGO CUBES ----------
+    st.markdown("### 🥭 Mango Cubes")
+    st.table({
+        "Item": [
+            "TRUCK CAPACITY",
+            "BOX WEIGHT (10 BAGS)",
+            "BOX PER TRUCK",
+            "BOX DIMENSION 45×30×25 cm",
+            "TOTAL BOX DIMENSION",
+            "TRUCK CUBIC CAPACITY",
+            "ROOM LEFT",
+            "ACHIEVABLE!!",
+            "Total unit per truck"
+        ],
+        "Value": [
+            "25,000 KG",
+            "10 KG",
+            "2,000 M³ LIMITED",
+            "0.034 M³",
+            "67.50 M³",
+            "90.00 M³",
+            "22.50 M³",
+            "✔️ ACHIEVABLE!!",
+            "20,000"
+        ]
+    })
+
+    st.markdown("---")
+
+    # ---------- SALADS ----------
+    st.markdown("### 🥬 Salads")
+    st.table({
+        "Item": [
+            "TRUCK CAPACITY",
+            "BOX WEIGHT (20 BAGS)",
+            "BOX PER TRUCK",
+            "BOX DIMENSION 40×40×30 cm",
+            "TOTAL BOX DIMENSION",
+            "TRUCK CUBIC CAPACITY",
+            "ROOM LEFT",
+            "ACHIEVABLE!!",
+            "Total unit per truck"
+        ],
+        "Value": [
+            "25,000 KG",
+            "5 KG",
+            "1,500 M³ LIMITED",
+            "0.05 M³",
+            "72.00 M³",
+            "90.00 M³",
+            "18.00 M³",
+            "✔️ ACHIEVABLE!!",
+            "30,000"
+        ]
+    })
+
+    st.markdown("---")
 
 # =================================
 # SECCIÓN: FINANZAS
