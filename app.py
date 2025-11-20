@@ -918,23 +918,3 @@ elif menu == "🧾 Conclusion":
         """
     )
 
-# =================================
-# SECCIÓN: DESCARGAR
-# =================================
-elif menu == "📊 Downloads":
-    st.title("Downloads")
-
-    # ---- SECCIÓN EXCEL ----
-    st.markdown("<h3 style='color:green;'>Aquí podrás consultar nuestro Excel con la información requerida</h3>", unsafe_allow_html=True)
-    st.write("")
-    st.markdown(
-        """
-        <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/files/informacion.xlsx" download>
-        <button style="background-color:green;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;"> Descargar Excel</button>
-        </a>
-        """,
-        unsafe_allow_html=True
-    )
-
-    st.markdown("---")
-
