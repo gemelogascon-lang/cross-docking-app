@@ -821,10 +821,6 @@ elif menu == "🚛 Logistics":
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios2.png", caption="Scenario 2 - Efficiency KPIs", use_container_width=True)
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios3.png", caption="Scenario 3 - Global Performance KPIs", use_container_width=True)
 
-# =================================
-# SECCIÓN: FINANZAS
-# =================================
-
 elif menu == "💰 Finance":
     # --- PROFIT AND LOSSES SECTION (SIDE BY SIDE) ---
     st.markdown("<h2 style='text-align:center; color:#2b3a2e;'><b>Profit Analysis</b></h2>", unsafe_allow_html=True)
@@ -869,16 +865,24 @@ elif menu == "💰 Finance":
         st.markdown(
             """
             <p style='text-align:justify; font-size:16px; color:#333333;'>
-            The <b>profit margin</b> would drop to <b>5%</b> if all of these 5
+            The <b>profit margin</b> would drop to <b>5%</b> if all of these 5 effects occurred simultaneously.  
+            A key takeaway is the <b>significant impact freight costs</b> have on overall profitability — indicating that
+            freight optimization and negotiation should be a priority to <b>maximize profits</b>.
+            </p>
+            """,
+            unsafe_allow_html=True
+        )
 
-#END OF PROFIT AND LOSSES SECTION
+    # END OF PROFIT AND LOSSES SECTION
+    st.markdown("---")
 
+    # --- FINANCIAL & OPERATIONAL CONSIDERATIONS ---
     st.title("Financial & Operational Considerations")
     st.markdown(
         """
         **Fuel and Refrigeration Costs:**  
-        - Fuel: 20/25% of logistics expenses.  
-        - Reefer maintenance adds 10/12% per pallet.  
+        - Fuel: 20–25% of logistics expenses.  
+        - Reefer maintenance adds 10–12% per pallet.  
         - *Mitigation:* Include fuel surcharge clauses.  
 
         **Customs Delay Management:**  
@@ -888,7 +892,7 @@ elif menu == "💰 Finance":
         """
     )
 
-       # ---- EXCEL SECTION ----
+    # ---- EXCEL SECTION ----
     st.markdown("<h3 style='color:green;'>Here you can access our Excel file with the required information.</h3>", unsafe_allow_html=True)
     st.write("")
     st.markdown(
@@ -902,6 +906,7 @@ elif menu == "💰 Finance":
 
     st.markdown("---")
 
+
 # =================================
 # SECTION: CONCLUSION
 # =================================
@@ -914,5 +919,3 @@ elif menu == "Conclusion":
         "By combining refrigerated trucking with strategic cross-docking, we deliver products "
         "in the best possible condition - fresh, fast, and reliable."
     )
-
-
