@@ -821,7 +821,46 @@ elif menu == "🚛 Logistics":
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios2.png", caption="Scenario 2 - Efficiency KPIs", use_container_width=True)
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios3.png", caption="Scenario 3 - Global Performance KPIs", use_container_width=True)
     
-    # =================================
+   
+elif menu == "💰 Finance":
+    # --- PROFIT AND LOSSES SECTION (SIDE BY SIDE) ---
+    st.markdown("<h2 style='text-align:center; color:#2b3a2e;'><b>Profit Analysis</b></h2>", unsafe_allow_html=True)
+
+    col1, col2 = st.columns(2, gap="large")
+
+    # -------- LEFT SIDE: Profit and Losses --------
+    with col1:
+        st.markdown("<h3 style='text-align:center; color:#2b3a2e;'><b>Profit and Losses</b></h3>", unsafe_allow_html=True)
+        st.image(
+            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Profit.png",
+            caption="Profit and Losses Overview",
+            use_container_width=True
+        )
+
+    # -------- RIGHT SIDE: Profit and Losses with Scenarios --------
+    with col2:
+        st.markdown("<h3 style='text-align:center; color:#2b3a2e;'><b>Profit and Losses with Scenarios</b></h3>", unsafe_allow_html=True)
+
+        # Imagen principal de escenarios
+        st.image(
+            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Profit2.png",
+            caption="Profit and Losses with Scenarios",
+            use_container_width=True
+        )
+
+        # Tabla de los 5 impactos (colores)
+        st.markdown("<h4 style='color:#2b3a2e;'>5 IMPACTS</h4>", unsafe_allow_html=True)
+        st.markdown(
+            """
+            <div style="background-color:#E8F5E9; padding:8px; font-size:15px;"><b>1 - INCREASE OF 20% IN THE FREIGHT FOR ALL THE PRODUCTS</b></div>
+            <div style="background-color:#E3F2FD; padding:8px; font-size:15px;"><b>2 - DOUBLE AMOUNT INVESTED IN EQUIPMENT, RESULTING IN DOUBLE DEPRECIATION</b></div>
+            <div style="background-color:#FFEB3B; padding:8px; font-size:15px;"><b>3 - INCREASE IN 30% IN INDIRECT LABOR</b></div>
+            <div style="background-color:#CFD8DC; padding:8px; font-size:15px;"><b>4 - INCREASE IN 20% IN INSURANCE</b></div>
+            <div style="background-color:#0288D1; padding:8px; font-size:15px; color:white;"><b>5 - PAYING HIGHER RENT BY 10%</b></div>
+            """,
+            unsafe_allow_html=True
+        )
+ # =================================
     # COST ANALYSIS SECTION
     # =================================
     st.markdown("<h2 style='text-align:center; color:#2b3a2e; font-size:34px;'><b>Cost Analysis by Product</b></h2>", unsafe_allow_html=True)
@@ -891,45 +930,6 @@ elif menu == "🚛 Logistics":
             use_container_width=True
         )
 #FINAL DE ANALISIS DE COSTOS POR PRODUCTO
-
-elif menu == "💰 Finance":
-    # --- PROFIT AND LOSSES SECTION (SIDE BY SIDE) ---
-    st.markdown("<h2 style='text-align:center; color:#2b3a2e;'><b>Profit Analysis</b></h2>", unsafe_allow_html=True)
-
-    col1, col2 = st.columns(2, gap="large")
-
-    # -------- LEFT SIDE: Profit and Losses --------
-    with col1:
-        st.markdown("<h3 style='text-align:center; color:#2b3a2e;'><b>Profit and Losses</b></h3>", unsafe_allow_html=True)
-        st.image(
-            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Profit.png",
-            caption="Profit and Losses Overview",
-            use_container_width=True
-        )
-
-    # -------- RIGHT SIDE: Profit and Losses with Scenarios --------
-    with col2:
-        st.markdown("<h3 style='text-align:center; color:#2b3a2e;'><b>Profit and Losses with Scenarios</b></h3>", unsafe_allow_html=True)
-
-        # Imagen principal de escenarios
-        st.image(
-            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Profit2.png",
-            caption="Profit and Losses with Scenarios",
-            use_container_width=True
-        )
-
-        # Tabla de los 5 impactos (colores)
-        st.markdown("<h4 style='color:#2b3a2e;'>5 IMPACTS</h4>", unsafe_allow_html=True)
-        st.markdown(
-            """
-            <div style="background-color:#E8F5E9; padding:8px; font-size:15px;"><b>1 - INCREASE OF 20% IN THE FREIGHT FOR ALL THE PRODUCTS</b></div>
-            <div style="background-color:#E3F2FD; padding:8px; font-size:15px;"><b>2 - DOUBLE AMOUNT INVESTED IN EQUIPMENT, RESULTING IN DOUBLE DEPRECIATION</b></div>
-            <div style="background-color:#FFEB3B; padding:8px; font-size:15px;"><b>3 - INCREASE IN 30% IN INDIRECT LABOR</b></div>
-            <div style="background-color:#CFD8DC; padding:8px; font-size:15px;"><b>4 - INCREASE IN 20% IN INSURANCE</b></div>
-            <div style="background-color:#0288D1; padding:8px; font-size:15px; color:white;"><b>5 - PAYING HIGHER RENT BY 10%</b></div>
-            """,
-            unsafe_allow_html=True
-        )
 
         # Conclusiones
         st.markdown("<h4 style='text-align:center; color:#2b3a2e;'>Conclusions</h4>", unsafe_allow_html=True)
