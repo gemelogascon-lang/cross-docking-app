@@ -817,10 +817,9 @@ elif menu == "🚛 Logistics":
     st.markdown("<p style='text-align:center; font-size:17px;'>We continuously monitor, analyze, and optimize our logistics processes to ensure better service performance and customer satisfaction.</p>", unsafe_allow_html=True)
 
     # Display the three KPI images (one below the other)
-    st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenario1.png", caption="Scenario 1 - Productivity KPIs", use_container_width=True)
-    st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenario2.png", caption="Scenario 2 - Efficiency KPIs", use_container_width=True)
-    st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenario3.png", caption="Scenario 3 - Global Performance KPIs", use_container_width=True)
-
+   https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios1.png
+https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios2.png
+https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios3.png
 
 # =================================
 # SECCIÓN: FINANZAS
