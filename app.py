@@ -888,13 +888,13 @@ elif menu == "💰 Finance":
         """
     )
 
-    # ---- SECCIÓN EXCEL ----
+       # ---- EXCEL SECTION ----
     st.markdown("<h3 style='color:green;'>Here you can access our Excel file with the required information.</h3>", unsafe_allow_html=True)
     st.write("")
     st.markdown(
         """
         <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/files/informacion.xlsx" download>
-            <button style="background-color:green;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">📗 Descargar Excel</button>
+            <button style="background-color:green;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">Download Excel</button>
         </a>
         """,
         unsafe_allow_html=True
