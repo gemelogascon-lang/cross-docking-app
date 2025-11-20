@@ -877,7 +877,7 @@ elif menu == "💰 Finance":
     # END OF PROFIT AND LOSSES SECTION
     st.markdown("---")
 
-     # =================================
+    # =================================
     # COST ANALYSIS SECTION
     # =================================
     st.markdown("<h2 style='text-align:center; color:#2b3a2e; font-size:34px;'><b>Cost Analysis by Product</b></h2>", unsafe_allow_html=True)
@@ -946,7 +946,6 @@ elif menu == "💰 Finance":
             caption="Salads Cost Impact",
             use_container_width=True
         )
-
     
     # --- FINANCIAL & OPERATIONAL CONSIDERATIONS ---
     st.title("Financial & Operational Considerations")
