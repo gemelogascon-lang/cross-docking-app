@@ -908,14 +908,12 @@ elif menu == "💰 Finance":
 elif menu == "🧾 Conclusion":
     st.title("Conclusion")
     st.markdown(
-        """
-        The next critical stage occurs at our cross-docking hub in Laredo, TX.  
-        Shipments are efficiently consolidated, inspected, and redistributed to U.S. and Canadian clients.  
-        This model minimizes storage, reduces costs, and ensures faster deliveries.  
+        """The next critical stage occurs at our cross-docking hub in Laredo, TX.  
+Shipments are efficiently consolidated, inspected, and redistributed to U.S. and Canadian clients.  
+This model minimizes storage, reduces costs, and ensures faster deliveries.  
 
-        By combining refrigerated trucking with strategic cross-docking, we deliver products  
-        in the best possible condition - fresh, fast, and reliable.
-        """
+By combining refrigerated trucking with strategic cross-docking, we deliver products  
+in the best possible condition - fresh, fast, and reliable."""
     )
 
 
