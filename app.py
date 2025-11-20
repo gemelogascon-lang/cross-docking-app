@@ -930,7 +930,7 @@ elif menu == "📊 Downloads":
     st.markdown(
         """
         <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/files/informacion.xlsx" download>
-        <button style="background-color:green;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">📗 Descargar Excel</button>
+        <button style="background-color:green;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;"> Descargar Excel</button>
         </a>
         """,
         unsafe_allow_html=True
@@ -944,7 +944,7 @@ elif menu == "📊 Downloads":
     st.markdown(
         """
         <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/files/app.py" download>
-            <button style="background-color:yellow;color:blue;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">🐍 Descargar Código Python</button>
+            <button style="background-color:yellow;color:blue;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">Descargar Código Python</button>
         </a>
         """,
         unsafe_allow_html=True
