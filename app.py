@@ -877,8 +877,8 @@ elif menu == "💰 Finance":
     st.markdown(
         """
         **Fuel and Refrigeration Costs:**  
-        - Fuel: 20–25% of logistics expenses.  
-        - Reefer maintenance adds 10–12% per pallet.  
+        - Fuel: 20/25% of logistics expenses.  
+        - Reefer maintenance adds 10/12% per pallet.  
         - *Mitigation:* Include fuel surcharge clauses.  
 
         **Customs Delay Management:**  
