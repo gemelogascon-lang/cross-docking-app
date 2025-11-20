@@ -824,6 +824,8 @@ elif menu == "🚛 Logistics":
 # =================================
 # SECCIÓN: FINANZAS
 # =================================
+
+elif menu == "💰 Finance":
     # --- PROFIT AND LOSSES SECTION ---
     st.markdown("<h2 style='text-align:center; color:#2b3a2e;'><b>Profit and Losses</b></h2>", unsafe_allow_html=True)
 
@@ -869,7 +871,6 @@ elif menu == "🚛 Logistics":
     )
 #END OF PROFIT AND LOSSES SECTION
 
-elif menu == "💰 Finance":
     st.title("Financial & Operational Considerations")
     st.markdown(
         """
