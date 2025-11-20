@@ -938,15 +938,3 @@ elif menu == "📊 Downloads":
 
     st.markdown("---")
 
-    # ---- SECCIÓN PYTHON APP ----
-    st.markdown("<h3 style='color:blue;'>Aquí puedes consultar nuestro código de Python (app.py)</h3>", unsafe_allow_html=True)
-    st.write("")
-    st.markdown(
-        """
-        <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/files/app.py" download>
-            <button style="background-color:yellow;color:blue;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">Descargar Código Python</button>
-        </a>
-        """,
-        unsafe_allow_html=True
-    )
-
