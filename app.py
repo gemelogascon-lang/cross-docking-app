@@ -971,11 +971,13 @@ elif menu == "💰 Finance":
             <h3 style="color:#006400;margin-top:0;">
                 Here you can access our Excel file with the required information.
             </h3>
-            <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA%20FOODS%20COSTS.xlsx" download>
-                <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
-                    Download Excel
-                </button>
-            </a>
+            <div style="text-align:center; margin-top:10px;">
+                <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA%20FOODS%20COSTS.xlsx" download>
+                    <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
+                        Download Excel
+                    </button>
+                </a>
+            </div>  
         </div>
         """,
         unsafe_allow_html=True
