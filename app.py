@@ -965,20 +965,23 @@ elif menu == "💰 Finance":
     )
 
     # ---- EXCEL SECTION ----
-    st.markdown("<h3 style='color:green;'>Here you can access our Excel file with the required information.</h3>", unsafe_allow_html=True)
-    st.write("")
-    st.markdown(
-        """
+   st.markdown(
+    """
+    <div style="background-color:#e0f5e0;padding:20px;border-radius:10px;">
+        <h3 style="color:#006400;margin-top:0;">
+            Here you can access our Excel file with the required information.
+        </h3>
         <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA%20FOODS%20COSTS.xlsx" download>
-            <button style="background-color:green;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">Download Excel</button>
+            <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
+                Download Excel
+            </button>
         </a>
-        """,
-        unsafe_allow_html=True
-    )
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-    st.markdown("---")
-
-
+st.markdown("---")
 # =================================
 # SECTION: CONCLUSION
 # =================================
