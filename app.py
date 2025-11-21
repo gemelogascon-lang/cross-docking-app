@@ -965,7 +965,7 @@ elif menu == "💰 Finance":
     )
 
      # ---- EXCEL SECTION ----
-    st.markdown(
+ st.markdown(
         """
         <div style="background-color:#e0f5e0;padding:20px;border-radius:10px;">
             <h3 style="color:#006400;margin-top:0;">
@@ -983,8 +983,6 @@ elif menu == "💰 Finance":
 
     st.markdown("---")
 
-
-st.markdown("---")
 # =================================
 # SECTION: CONCLUSION
 # =================================
