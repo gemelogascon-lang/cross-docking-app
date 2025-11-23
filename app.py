@@ -825,8 +825,9 @@ elif menu == "🚛 Logistics":
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios3.png", caption="Scenario 3 - Global Performance KPIs", use_container_width=True)
 
     #LAYOUT PART
+    # 🔹 Título centrado + espacio extra
     st.markdown(
-        "<h2 style='text-align:center;'>WAREHOUSING, LAYOUT & EQUIPMENT SELECTION</h2>",
+        "<h2 style='text-align:center; margin-top:15px; margin-bottom:25px;'>WAREHOUSING, LAYOUT & EQUIPMENT SELECTION</h2>",
         unsafe_allow_html=True
     )
 
@@ -857,10 +858,12 @@ elif menu == "🚛 Logistics":
     st.markdown(
         """
         <p style='text-align:center;'>
-        Benefits of Using a Conveyor System in a U-shape Warehouse:<br><br>
-        The U-shape layout maximizes warehouse space, facilitating smooth material flow, while the conveyor can easily fit within this layout, transporting items from one end of the warehouse to the other.<br><br>
-        Conveyors reduce the need for manual labor compared to forklifts or pallet jacks, minimizing the risk of accidents and fatigue. This improves safety and helps save costs on personnel.<br><br>
-        The conveyor system supports a continuous flow of goods without delays, which is essential for keeping up with the high-volume demands of the avocado business.
+            <span style='font-size:19px; font-weight:bold;'>
+                Benefits of Using a Conveyor System in a U-shape Warehouse:
+            </span><br><br>
+            The U-shape layout maximizes warehouse space, facilitating smooth material flow, while the conveyor can easily fit within this layout, transporting items from one end of the warehouse to the other.<br><br>
+            Conveyors reduce the need for manual labor compared to forklifts or pallet jacks, minimizing the risk of accidents and fatigue. This improves safety and helps save costs on personnel.<br><br>
+            The conveyor system supports a continuous flow of goods without delays, which is essential for keeping up with the high-volume demands of the avocado business.
         </p>
         """,
         unsafe_allow_html=True
@@ -871,6 +874,7 @@ elif menu == "🚛 Logistics":
         caption="Equipment Cost Comparison",
         use_container_width=True
     )
+
     #END OF LAYOUT PART
 
 elif menu == "💰 Finance":
