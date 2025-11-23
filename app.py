@@ -1052,3 +1052,13 @@ elif menu == "Conclusion":
         "By combining refrigerated trucking with strategic cross-docking, we deliver products "
         "in the best possible condition - fresh, fast, and reliable."
     )
+    
+elif menu == "Routes":
+    st.title("Routes")
+    st.markdown(
+        "The next critical stage occurs at our cross-docking hub in Laredo, TX.\n"
+        "Shipments are efficiently consolidated, inspected, and redistributed to U.S. and Canadian clients.\n"
+        "This model minimizes storage, reduces costs, and ensures faster deliveries.\n\n"
+        "By combining refrigerated trucking with strategic cross-docking, we deliver products "
+        "in the best possible condition - fresh, fast, and reliable."
+    )
