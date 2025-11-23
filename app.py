@@ -834,11 +834,20 @@ elif menu == "🚛 Logistics":
 Conveyor System is the best choice for Aurora Fresh Foods due to its balance of high efficiency, low operating costs, and suitability for a U-shape warehouse layout. The conveyor system requires fewer trips, reducing labor costs, and optimizing space, making it the most cost-effective solution in the long run.
 """)
 
-    st.image(
-        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Alternatives.png",
-        caption="Equipment Alternatives",
-        use_container_width=True
-    )
+    # 🔹 Alternatives + Layout side by side
+    col1, col2 = st.columns(2)
+    with col1:
+        st.image(
+            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Alternatives.png",
+            caption="Equipment Alternatives",
+            use_container_width=True
+        )
+    with col2:
+        st.image(
+            "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Layout.png",
+            caption="Warehouse Layout (U-shape)",
+            use_container_width=True
+        )
 
     st.markdown("""
 Benefits of Using a Conveyor System in a U-shape Warehouse:
@@ -846,12 +855,6 @@ The U-shape layout maximizes warehouse space, facilitating smooth material flow,
 Conveyors reduce the need for manual labor compared to forklifts or pallet jacks, minimizing the risk of accidents and fatigue. This improves safety and helps save costs on personnel.
 The conveyor system supports a continuous flow of goods without delays, which is essential for keeping up with the high-volume demands of the avocado business.
 """)
-
-    st.image(
-        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Layout.png",
-        caption="Warehouse Layout (U-shape)",
-        use_container_width=True
-    )
 
     st.image(
         "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Altcost.png",
