@@ -830,9 +830,14 @@ elif menu == "🚛 Logistics":
         unsafe_allow_html=True
     )
 
-    st.markdown("""
-Conveyor System is the best choice for Aurora Fresh Foods due to its balance of high efficiency, low operating costs, and suitability for a U-shape warehouse layout. The conveyor system requires fewer trips, reducing labor costs, and optimizing space, making it the most cost-effective solution in the long run.
-""")
+    st.markdown(
+        """
+        <p style='text-align:center;'>
+        Conveyor System is the best choice for Aurora Fresh Foods due to its balance of high efficiency, low operating costs, and suitability for a U-shape warehouse layout. The conveyor system requires fewer trips, reducing labor costs, and optimizing space, making it the most cost-effective solution in the long run.
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
 
     # 🔹 Alternatives + Layout side by side
     col1, col2 = st.columns(2)
@@ -849,12 +854,17 @@ Conveyor System is the best choice for Aurora Fresh Foods due to its balance of 
             use_container_width=True
         )
 
-    st.markdown("""
-Benefits of Using a Conveyor System in a U-shape Warehouse:
-The U-shape layout maximizes warehouse space, facilitating smooth material flow, while the conveyor can easily fit within this layout, transporting items from one end of the warehouse to the other.
-Conveyors reduce the need for manual labor compared to forklifts or pallet jacks, minimizing the risk of accidents and fatigue. This improves safety and helps save costs on personnel.
-The conveyor system supports a continuous flow of goods without delays, which is essential for keeping up with the high-volume demands of the avocado business.
-""")
+    st.markdown(
+        """
+        <p style='text-align:center;'>
+        Benefits of Using a Conveyor System in a U-shape Warehouse:<br><br>
+        The U-shape layout maximizes warehouse space, facilitating smooth material flow, while the conveyor can easily fit within this layout, transporting items from one end of the warehouse to the other.<br><br>
+        Conveyors reduce the need for manual labor compared to forklifts or pallet jacks, minimizing the risk of accidents and fatigue. This improves safety and helps save costs on personnel.<br><br>
+        The conveyor system supports a continuous flow of goods without delays, which is essential for keeping up with the high-volume demands of the avocado business.
+        </p>
+        """,
+        unsafe_allow_html=True
+    )
 
     st.image(
         "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Altcost.png",
