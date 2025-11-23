@@ -1040,21 +1040,19 @@ elif menu == "💰 Finance":
 
     st.markdown("---")
 
+#RUTAS 
+elif menu == "Routes":
+    st.title("Routes")
+    st.markdown(
+        "<h2 style='text-align:center; color:#2b3a2e;'><b>Strategic Distribution Routes: Mexico – U.S. – Canada</b></h2>",
+        unsafe_allow_html=True
+    )
+
 # =================================
 # SECTION: CONCLUSION
 # =================================
 elif menu == "Conclusion":
     st.title("Conclusion")
-    st.markdown(
-        "The next critical stage occurs at our cross-docking hub in Laredo, TX.\n"
-        "Shipments are efficiently consolidated, inspected, and redistributed to U.S. and Canadian clients.\n"
-        "This model minimizes storage, reduces costs, and ensures faster deliveries.\n\n"
-        "By combining refrigerated trucking with strategic cross-docking, we deliver products "
-        "in the best possible condition - fresh, fast, and reliable."
-    )
-    
-elif menu == "Routes":
-    st.title("Routes")
     st.markdown(
         "The next critical stage occurs at our cross-docking hub in Laredo, TX.\n"
         "Shipments are efficiently consolidated, inspected, and redistributed to U.S. and Canadian clients.\n"
