@@ -823,8 +823,43 @@ elif menu == "🚛 Logistics":
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios1.png", caption="Scenario 1 - Productivity KPIs", use_container_width=True)
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios2.png", caption="Scenario 2 - Efficiency KPIs", use_container_width=True)
     st.image("https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Escenarios3.png", caption="Scenario 3 - Global Performance KPIs", use_container_width=True)
-    
-   
+
+    #LAYOUT PART
+    st.markdown(
+        "<h2 style='text-align:center;'>WAREHOUSING, LAYOUT & EQUIPMENT SELECTION</h2>",
+        unsafe_allow_html=True
+    )
+
+    st.markdown("""
+Conveyor System is the best choice for Aurora Fresh Foods due to its balance of high efficiency, low operating costs, and suitability for a U-shape warehouse layout. The conveyor system requires fewer trips, reducing labor costs, and optimizing space, making it the most cost-effective solution in the long run.
+""")
+
+    st.image(
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Alternatives.png",
+        caption="Equipment Alternatives",
+        use_container_width=True
+    )
+
+    st.markdown("""
+Benefits of Using a Conveyor System in a U-shape Warehouse:
+The U-shape layout maximizes warehouse space, facilitating smooth material flow, while the conveyor can easily fit within this layout, transporting items from one end of the warehouse to the other.
+Conveyors reduce the need for manual labor compared to forklifts or pallet jacks, minimizing the risk of accidents and fatigue. This improves safety and helps save costs on personnel.
+The conveyor system supports a continuous flow of goods without delays, which is essential for keeping up with the high-volume demands of the avocado business.
+""")
+
+    st.image(
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Layout.png",
+        caption="Warehouse Layout (U-shape)",
+        use_container_width=True
+    )
+
+    st.image(
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Altcost.png",
+        caption="Equipment Cost Comparison",
+        use_container_width=True
+    )
+    #END OF LAYOUT PART
+
 elif menu == "💰 Finance":
     # --- PROFIT AND LOSSES SECTION (SIDE BY SIDE) ---
     st.markdown("<h2 style='text-align:center; color:#2b3a2e;'><b>Profit Analysis</b></h2>", unsafe_allow_html=True)
