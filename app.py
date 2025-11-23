@@ -827,7 +827,7 @@ elif menu == "🚛 Logistics":
     #LAYOUT PART
     # 🔹 Título centrado + espacio extra
     st.markdown(
-        "<h2 style='text-align:center; margin-top:15px; margin-bottom:25px;'>WAREHOUSING, LAYOUT & EQUIPMENT SELECTION</h2>",
+        "<h2 style='text-align:center; color:#2b3a2e;'><b>WAREHOUSING, LAYOUT & EQUIPMENT SELECTION</b></h2>",
         unsafe_allow_html=True
     )
 
