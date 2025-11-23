@@ -191,8 +191,9 @@ st.sidebar.title("Navigation Menu")
 st.sidebar.markdown("Select a section to explore:")
 menu = st.sidebar.radio(
     "",
-    ["🏠 Home", "🥭 Products", "🚛 Logistics", "💰 Finance", "🧾 Conclusion", "Routes"]
+    ["🏠 Home", "🥭 Products", "🚛 Logistics", "💰 Finance", "🗺️ Routes", "🧾 Conclusion", "📊 Downloads"]
 )
+
 
 # =================================
 # SECCIÓN: INICIO
@@ -1040,18 +1041,14 @@ elif menu == "💰 Finance":
 
     st.markdown("---")
 
-#RUTAS 
-elif menu == "Routes":
+elif menu == "🗺️ Routes":
     st.title("Routes")
     st.markdown(
         "<h2 style='text-align:center; color:#2b3a2e;'><b>Strategic Distribution Routes: Mexico – U.S. – Canada</b></h2>",
         unsafe_allow_html=True
     )
 
-# =================================
-# SECTION: CONCLUSION
-# =================================
-elif menu == "Conclusion":
+elif menu == "🧾 Conclusion":
     st.title("Conclusion")
     st.markdown(
         "The next critical stage occurs at our cross-docking hub in Laredo, TX.\n"
