@@ -575,7 +575,7 @@ elif menu == "🚛 Logistics":
         """
         At **Aurora Fresh Foods**, our logistics network is meticulously designed to maintain the highest levels of freshness, quality, and efficiency throughout the supply chain.  
         The journey begins with sourcing premium, fresh produce from the best farms in Michoacán and Jalisco, known for their rich agricultural heritage.  
-        Once the produce arrives, it is carefully processed and packaged in our state-of-the-art facility in Querétaro, where we maintain rigorous standards of hygiene and quality.  
+        Once the produce arrives, it is carefully processed and packaged in our state-of-the-art facility in Monterrey, where we maintain rigorous standards of hygiene and quality.  
         After packaging, the products are transported using refrigerated trucks to ensure temperature control and prevent spoilage.
 
         The next critical stage of the process occurs at our **cross-docking hub in Laredo, TX**.  
