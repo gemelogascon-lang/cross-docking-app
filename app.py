@@ -1279,34 +1279,31 @@ elif menu == "🧾 Contact":
     """)
     
 elif menu == "Infographic":
-    # --- Fondo tipo infografía solo para este bloque ---
+    # Título centrado
+    st.markdown(
+        "<h2 style='text-align:center; color:#2b3a2e;'><b>Logistics Network Infographic</b></h2>",
+        unsafe_allow_html=True
+    )
+
+    # Fondo tipo infografía solo alrededor de las imágenes
     st.markdown(
         """
-        <style>
-        .infographic-bg {
-            background-color:#0b3f33;  /* verde oscuro parecido al de la infografía */
-            padding-top:20px;
-            padding-bottom:40px;
-        }
-        .infographic-bg img {
-            display:block;
-            margin-left:auto;
-            margin-right:auto;
-        }
-        </style>
+        <div style="background-color:#0b3f33;padding-top:20px;padding-bottom:30px;">
         """,
         unsafe_allow_html=True
     )
 
-    # --- Contenedor con las dos imágenes, una pegada a la otra ---
-    st.markdown(
-        """
-        <div class="infographic-bg">
-            <img src="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/info1.png"
-                 style="max-width:100%; margin-bottom:0px;">
-            <img src="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/info2.png"
-                 style="max-width:100%; margin-top:0px;">
-        </div>
-        """,
-        unsafe_allow_html=True
+    # Primera mitad de la infografía
+    st.image(
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/info1.png",
+        use_container_width=True
     )
+
+    # Segunda mitad, lo más pegada posible a la primera
+    st.image(
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/info2.png",
+        use_container_width=True
+    )
+
+    # Cerrar el div del fondo
+    st.markdown("</div>", unsafe_allow_html=True)
