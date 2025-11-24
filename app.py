@@ -1043,12 +1043,6 @@ elif menu == "💰 Finance":
 
 elif menu == "🗺️ Routes":
     st.title("Routes")
-    st.markdown(
-        "<h2 style='text-align:center; color:#2b3a2e;'><b>Strategic Distribution Routes: Mexico – U.S. – Canada</b></h2>",
-        unsafe_allow_html=True
-    )
-    st.markdown("---")
-
     # ---------- TRANSPORTATION COST ANALYSIS ----------
     st.markdown(
         "<h2 style='text-align:center; color:#2b3a2e;'><b>Transportation Cost Analysis & Route Methodology</b></h2>",
