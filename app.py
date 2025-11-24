@@ -1208,5 +1208,11 @@ elif menu == "Infographic":
         use_container_width=True
     )
 
+    # Segunda mitad, lo más pegada posible a la primera
+    st.image(
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Info3.png",
+        use_container_width=True
+    )
+
     # Cerrar el div del fondo
     st.markdown("</div>", unsafe_allow_html=True)
