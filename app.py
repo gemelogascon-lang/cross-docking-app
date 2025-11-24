@@ -1279,11 +1279,6 @@ elif menu == "🧾 Contact":
     """)
     
 elif menu == "Infographic":
-    # Título centrado
-    st.markdown(
-        "<h2 style='text-align:center; color:#2b3a2e;'><b>Logistics Network Infographic</b></h2>",
-        unsafe_allow_html=True
-    )
 
     # Fondo tipo infografía solo alrededor de las imágenes
     st.markdown(
