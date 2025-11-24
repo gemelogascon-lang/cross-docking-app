@@ -622,7 +622,7 @@ elif menu == "🚛 Logistics":
         """
         **Land (Refrigerated Trucking)**  
         - **Why Chosen:** Most cost-effective for the North American corridor (Mexico–U.S.–Canada).  
-        - **Time:** 1.5 days from Querétaro to Laredo, then 3–5 days to regional U.S. and Canadian hubs.  
+        - **Time:** 1.5 days from Uruapan to Laredo, then 3–5 days to regional U.S. and Canadian hubs.  
         - **Cost:** More economical compared to air transport, and faster than sea.  
         - **Service:** Reliable, with temperature control for sensitive products.
         """
