@@ -1057,3 +1057,59 @@ elif menu == "🧾 Conclusion":
         "By combining refrigerated trucking with strategic cross-docking, we deliver products "
         "in the best possible condition - fresh, fast, and reliable."
     )
+    st.markdown("""
+The transportation cost analysis was built using a straightforward, two-step methodology:
+
+First, the point-to-point distances between each origin city and each destination market were sourced from the internet (Google Maps).
+
+Second, the total truck cost for each product route was divided by these pre defined distances to calculate a unique cost per kilometer for every single origin and destination pair. 
+
+This is why the cost per kilometer varies between routes, it is not a single flat rate but a direct reflection of the total cost allocated over the specific distance for that route.
+
+Essentially, we calculated the per kilometer rate from the total cost and the distance for each route.
+""")
+
+st.image(
+    "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Line.png",
+    use_container_width=True
+)
+
+st.image(
+    "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Trans1.png",
+    use_container_width=True
+)
+
+st.image(
+    "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Trans2.png",
+    use_container_width=True
+)
+
+st.image(
+    "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Supply.png",
+    use_container_width=True
+)
+
+st.image(
+    "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Demand1.png",
+    use_container_width=True
+)
+
+st.image(
+    "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Demand2.png",
+    use_container_width=True
+)
+
+st.image(
+    "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Totaltranscost.png",
+    use_container_width=True
+)
+
+st.markdown("""
+The analysis of the three scenarios reveals a clear hierarchy in logistics challenges. Avocados represent a high-volume, high-cost operation, with expenses driven by the massive demand in major hubs like New York and Chicago. Mangoes demonstrate a more cost-efficient model, with nearly half the transportation cost of avocados due to optimized routes and lower total volume. 
+
+For instance, shipments from Hermosillo to Phoenix cost $60.34, while those from Guadalajara to Seattle cost $9.59. This reflects the reliance on Mexican producing regions to supply the U.S. market, with costs increasing for distant destinations such as the Northeast.
+
+However, salads emerge as the most logistically demanding and expensive product, combining the highest volume with the inherent challenges of transporting a bulky, perishable item. This leads to the highest total transportation cost.
+
+The key takeaway is that for fresh produce, product characteristics (perishability, bulk) are as critical as volume and distance in determining cost. Strategic origin selection and route optimization are paramount, especially for time-sensitive goods, to minimize expenses and maintain quality.
+""")
