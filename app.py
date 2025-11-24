@@ -1047,17 +1047,15 @@ elif menu == "🗺️ Routes":
         "<h2 style='text-align:center; color:#2b3a2e;'><b>Strategic Distribution Routes: Mexico – U.S. – Canada</b></h2>",
         unsafe_allow_html=True
     )
+    st.markdown("---")
 
-elif menu == "🧾 Conclusion":
-    st.title("Conclusion")
-    st.markdown(
-        "The next critical stage occurs at our cross-docking hub in Laredo, TX.\n"
-        "Shipments are efficiently consolidated, inspected, and redistributed to U.S. and Canadian clients.\n"
-        "This model minimizes storage, reduces costs, and ensures faster deliveries.\n\n"
-        "By combining refrigerated trucking with strategic cross-docking, we deliver products "
-        "in the best possible condition - fresh, fast, and reliable."
-    )
-    st.markdown("""
+# ---------- TRANSPORTATION COST ANALYSIS ----------
+st.markdown(
+    "<h2 style='text-align:center; color:#2b3a2e;'><b>Transportation Cost Analysis & Route Methodology</b></h2>",
+    unsafe_allow_html=True
+)
+
+st.markdown("""
 The transportation cost analysis was built using a straightforward, two-step methodology:
 
 First, the point-to-point distances between each origin city and each destination market were sourced from the internet (Google Maps).
@@ -1069,36 +1067,71 @@ This is why the cost per kilometer varies between routes, it is not a single fla
 Essentially, we calculated the per kilometer rate from the total cost and the distance for each route.
 """)
 
+# 1) Line.png
+st.markdown(
+    "<h3 style='text-align:center; color:#2b3a2e;'><b>Distribution Distances & Avocado Route Cost per km</b></h3>",
+    unsafe_allow_html=True
+)
 st.image(
     "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Line.png",
     use_container_width=True
 )
 
+# 2) Trans1.png
+st.markdown(
+    "<h3 style='text-align:center; color:#2b3a2e;'><b>Warehouse Supply Line – Scenarios 1 & 2</b></h3>",
+    unsafe_allow_html=True
+)
 st.image(
     "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Trans1.png",
     use_container_width=True
 )
 
+# 3) Trans2.png
+st.markdown(
+    "<h3 style='text-align:center; color:#2b3a2e;'><b>USD Cost per km in Mango & Salad Routes</b></h3>",
+    unsafe_allow_html=True
+)
 st.image(
     "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Trans2.png",
     use_container_width=True
 )
 
+# 4) Supply.png
+st.markdown(
+    "<h3 style='text-align:center; color:#2b3a2e;'><b>Supply Allocation from Consolidation Centers</b></h3>",
+    unsafe_allow_html=True
+)
 st.image(
     "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Supply.png",
     use_container_width=True
 )
 
+# 5) Demand1.png
+st.markdown(
+    "<h3 style='text-align:center; color:#2b3a2e;'><b>Avocado & Mango Demand by Destination Centers</b></h3>",
+    unsafe_allow_html=True
+)
 st.image(
     "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Demand1.png",
     use_container_width=True
 )
 
+# 6) Demand2.png
+st.markdown(
+    "<h3 style='text-align:center; color:#2b3a2e;'><b>Salad Demand by Destination Centers</b></h3>",
+    unsafe_allow_html=True
+)
 st.image(
     "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Demand2.png",
     use_container_width=True
 )
 
+# 7) Totaltranscost.png
+st.markdown(
+    "<h3 style='text-align:center; color:#2b3a2e;'><b>Total Transportation Cost – Northwest Corner Solution</b></h3>",
+    unsafe_allow_html=True
+)
 st.image(
     "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Totaltranscost.png",
     use_container_width=True
@@ -1111,5 +1144,16 @@ For instance, shipments from Hermosillo to Phoenix cost $60.34, while those from
 
 However, salads emerge as the most logistically demanding and expensive product, combining the highest volume with the inherent challenges of transporting a bulky, perishable item. This leads to the highest total transportation cost.
 
-The key takeaway is that for fresh produce, product characteristics (perishability, bulk) are as critical as volume and distance in determining cost. Strategic origin selection and route optimization are paramount, especially for time-sensitive goods, to minimize expenses and maintain quality.
-""")
+The key takeaway is that for fresh produce, product characteristics (perishability, bulk) are as critical as volume and distance in dete
+
+
+elif menu == "🧾 Conclusion":
+    st.title("Conclusion")
+    st.markdown(
+        "The next critical stage occurs at our cross-docking hub in Laredo, TX.\n"
+        "Shipments are efficiently consolidated, inspected, and redistributed to U.S. and Canadian clients.\n"
+        "This model minimizes storage, reduces costs, and ensures faster deliveries.\n\n"
+        "By combining refrigerated trucking with strategic cross-docking, we deliver products "
+        "in the best possible condition - fresh, fast, and reliable."
+    )
+    
