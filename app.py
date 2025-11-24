@@ -1295,13 +1295,13 @@ elif menu == "Infographic":
 
     # Primera mitad de la infografía
     st.image(
-        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/info1.png",
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Info1.png",
         use_container_width=True
     )
 
     # Segunda mitad, lo más pegada posible a la primera
     st.image(
-        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/info2.png",
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Info2.png",
         use_container_width=True
     )
 
