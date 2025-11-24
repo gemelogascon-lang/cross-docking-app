@@ -1185,36 +1185,39 @@ It benefits from geographical proximity, more direct highway connections, and op
     st.markdown("""
 In conclusion, **Route 1 provides the perfect balance of lowest cost, highest speed, and operational reliability**, making it the most effective logistics chain for direct avocado distribution from Mexico to key North American markets and is the one we are going for in this project.
 """)
-
-    # ---------- EXCEL BUTTONS ----------
+    # BOTON DE EXCEL CON LOS DOS BOTONES
     st.markdown(
         """
         <div style="background-color:#e0f5e0;padding:20px;border-radius:10px;">
             <h3 style="color:#006400;margin-top:0; text-align:center;">
                 Download Aurora Foods Route Design & Heuristic Model Files
             </h3>
-
+    
             <div style="text-align:center; margin-top:10px;">
                 <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA%20FOODS%3B%20HEURISTIC%20MODELS%20%E2%80%93%20NORTHWEST%20CORNER.xlsx" download>
-                    <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
+                    <button style="background-color:#008000;color:white;padding:10px 20px;
+                                   border:none;border-radius:5px;cursor:pointer;font-size:16px;">
                         Download Heuristic Models – Northwest Corner
                     </button>
                 </a>
             </div>
-
+    
             <div style="text-align:center; margin-top:10px;">
                 <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA%20FOODS%3B%20NODES%20%26%20GRAPHS%20%E2%80%93%20ROUTE%20DESIGN.xlsx" download>
-                    <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
+                    <button style="background-color:#008000;color:white;padding:10px 20px;
+                                   border:none;border-radius:5px;cursor:pointer;font-size:16px;">
                         Download Nodes & Graphs – Route Design
                     </button>
                 </a>
             </div>
+    
         </div>
         """,
         unsafe_allow_html=True
     )
-
+    
     st.markdown("---")
+
 
 elif menu == "🧾 Contact":
     st.markdown("---")
