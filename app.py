@@ -1137,6 +1137,66 @@ However, salads emerge as the most logistically demanding and expensive product,
 
 The key takeaway is that for fresh produce, product characteristics (perishability, bulk) are as critical as volume and distance in determining cost. Strategic origin selection and route optimization are paramount, especially for time-sensitive goods, to minimize expenses and maintain quality.
 """)
+    t.markdown("---")
+
+# ---------- DIRECT & INDIRECT ROUTES COMPARISON ----------
+st.markdown(
+    "<h2 style='text-align:center; color:#2b3a2e;'><b>Direct and Indirect Distribution Routes Comparison</b></h2>",
+    unsafe_allow_html=True
+)
+
+# 🔹 Direct routes (Route 1 & Route 2)
+st.markdown(
+    "<h3 style='text-align:center; color:#2b3a2e;'><b>Direct Routes: West & East Long-Haul Corridors</b></h3>",
+    unsafe_allow_html=True
+)
+
+st.image(
+    "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Routes1.png",
+    use_container_width=True
+)
+
+st.image(
+    "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Routes2.png",
+    use_container_width=True
+)
+
+# 🔹 Indirect routes (Route 3 & Route 4)
+st.markdown(
+    "<h3 style='text-align:center; color:#2b3a2e;'><b>Indirect Routes: Multi-Node Distribution via Laredo, TX</b></h3>",
+    unsafe_allow_html=True
+)
+
+st.image(
+    "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Routes3.png",
+    use_container_width=True
+)
+
+st.image(
+    "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Routes4.png",
+    use_container_width=True
+)
+
+st.markdown("""
+This analysis compares four distinct freight distribution routes connecting Mexican production centers with North American markets, evaluating total distance and network efficiency for Aurora Foods transportation logistics.
+
+**Direct routes analysis:**
+
+Route 1 is 23% more efficient (1,630 km shorter) than Route 2.
+
+It benefits from geographical proximity, more direct highway connections, and optimized border crossings, making it the undisputed best choice for a direct, long-haul shipment.
+""")
+
+st.markdown("""
+In conclusion, **Route 1 provides the perfect balance of lowest cost, highest speed, and operational reliability**, making it the most effective logistics chain for direct avocado distribution from Mexico to key North American markets and is the one we are going for in this project.
+""")
+
+
+
+
+
+
+
 
 elif menu == "🧾 Conclusion":
     st.title("Conclusion")
