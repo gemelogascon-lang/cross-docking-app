@@ -596,7 +596,7 @@ elif menu == "🚛 Logistics":
             "Sourcing of fresh produce from farms in Michoacán and Jalisco, including avocados, mangoes, and greens, ensuring consistent supply.",
             "HACCP-certified facility in Querétaro handles processing (pulping, IQF freezing) and packaging, maintaining quality standards.",
             "Products are transported in refrigerated trucks, maintaining -18°C (frozen) or 2–4°C (salads) during shipment.",
-            "Cold storage in Querétaro for products, and temporary storage at Laredo, TX, for customs inspection and redistribution.",
+            "Cold storage in Monterrey for products, and temporary storage at Laredo, TX, for customs inspection and redistribution.",
             "Used at Laredo, TX, to consolidate shipments, reduce inventory holding, and speed up flow from warehouse to clients.",
             "Third-party logistics providers ensure customs clearance and border compliance for U.S. and Canadian shipments.",
             "Products are distributed to regional warehouses or directly to retail and foodservice clients in the U.S. and Canada."
