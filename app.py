@@ -1191,7 +1191,7 @@ It benefits from geographical proximity, more direct highway connections, and op
 In conclusion, **Route 1 provides the perfect balance of lowest cost, highest speed, and operational reliability**, making it the most effective logistics chain for direct avocado distribution from Mexico to key North American markets and is the one we are going for in this project.
 """)
 
-elif menu == "🧾 Conclusion":
+elif menu == "🧾 Contact":
     st.title("Conclusion")
 
     st.markdown(
