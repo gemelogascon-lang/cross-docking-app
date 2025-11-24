@@ -1221,7 +1221,7 @@ st.markdown(
 
 st.markdown("---")
 
-elif menu == "🧾 Contact":
+    elif menu == "🧾 Contact":
     st.markdown("---")
 
     # ---------- CONTACT & LEGAL ----------
