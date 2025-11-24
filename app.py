@@ -1277,3 +1277,36 @@ elif menu == "🧾 Contact":
 
     By using this website, you agree to the terms of this disclaimer and our privacy policy.
     """)
+    
+elif menu == "Infographic":
+    # --- Fondo tipo infografía solo para este bloque ---
+    st.markdown(
+        """
+        <style>
+        .infographic-bg {
+            background-color:#0b3f33;  /* verde oscuro parecido al de la infografía */
+            padding-top:20px;
+            padding-bottom:40px;
+        }
+        .infographic-bg img {
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # --- Contenedor con las dos imágenes, una pegada a la otra ---
+    st.markdown(
+        """
+        <div class="infographic-bg">
+            <img src="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/info1.png"
+                 style="max-width:100%; margin-bottom:0px;">
+            <img src="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/info2.png"
+                 style="max-width:100%; margin-top:0px;">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
