@@ -1043,6 +1043,7 @@ elif menu == "💰 Finance":
 
 elif menu == "🗺️ Routes":
     st.title("Routes")
+
     # ---------- TRANSPORTATION COST ANALYSIS ----------
     st.markdown(
         "<h2 style='text-align:center; color:#2b3a2e;'><b>Transportation Cost Analysis & Route Methodology</b></h2>",
@@ -1112,7 +1113,6 @@ Essentially, we calculated the per kilometer rate from the total cost and the di
     )
 
     # 6) Demand2.png
-
     st.image(
         "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Demand2.png",
         use_container_width=True
@@ -1138,40 +1138,35 @@ However, salads emerge as the most logistically demanding and expensive product,
 The key takeaway is that for fresh produce, product characteristics (perishability, bulk) are as critical as volume and distance in determining cost. Strategic origin selection and route optimization are paramount, especially for time-sensitive goods, to minimize expenses and maintain quality.
 """)
 
-
     # ---------- DIRECT & INDIRECT ROUTES COMPARISON ----------
     st.markdown(
         "<h2 style='text-align:center; color:#2b3a2e;'><b>Direct and Indirect Distribution Routes Comparison</b></h2>",
         unsafe_allow_html=True
     )
 
-    # 🔹 Direct routes (Route 1 & Route 2)
+    # 🔹 Direct routes
     st.markdown(
         "<h3 style='text-align:center; color:#2b3a2e;'><b>Direct Routes: West & East Long-Haul Corridors</b></h3>",
         unsafe_allow_html=True
     )
-
     st.image(
         "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Routes1.png",
         use_container_width=True
     )
-
     st.image(
         "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Routes2.png",
         use_container_width=True
     )
 
-    # 🔹 Indirect routes (Route 3 & Route 4)
+    # 🔹 Indirect routes
     st.markdown(
         "<h3 style='text-align:center; color:#2b3a2e;'><b>Indirect Routes: Multi-Node Distribution via Laredo, TX</b></h3>",
         unsafe_allow_html=True
     )
-
     st.image(
         "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Routes3.png",
         use_container_width=True
     )
-
     st.image(
         "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Routes4.png",
         use_container_width=True
@@ -1187,93 +1182,85 @@ Route 1 is 23% more efficient (1,630 km shorter) than Route 2.
 It benefits from geographical proximity, more direct highway connections, and optimized border crossings, making it the undisputed best choice for a direct, long-haul shipment.
 """)
 
-st.markdown("""
+    st.markdown("""
 In conclusion, **Route 1 provides the perfect balance of lowest cost, highest speed, and operational reliability**, making it the most effective logistics chain for direct avocado distribution from Mexico to key North American markets and is the one we are going for in this project.
 """)
 
-# BOTON DE EXCEL CON LOS DOS BOTONES
-st.markdown(
-    """
-    <div style="background-color:#e0f5e0;padding:20px;border-radius:10px;">
-        <h3 style="color:#006400;margin-top:0; text-align:center;">
-            Download Aurora Foods Route Design & Heuristic Model Files
-        </h3>
+    # ---------- EXCEL BUTTONS ----------
+    st.markdown(
+        """
+        <div style="background-color:#e0f5e0;padding:20px;border-radius:10px;">
+            <h3 style="color:#006400;margin-top:0; text-align:center;">
+                Download Aurora Foods Route Design & Heuristic Model Files
+            </h3>
 
-        <div style="text-align:center; margin-top:10px;">
-            <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA%20FOODS%3B%20HEURISTIC%20MODELS%20%E2%80%93%20NORTHWEST%20CORNER.xlsx" download>
-                <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
-                    Download Heuristic Models – Northwest Corner
-                </button>
-            </a>
+            <div style="text-align:center; margin-top:10px;">
+                <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA%20FOODS%3B%20HEURISTIC%20MODELS%20%E2%80%93%20NORTHWEST%20CORNER.xlsx" download>
+                    <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
+                        Download Heuristic Models – Northwest Corner
+                    </button>
+                </a>
+            </div>
+
+            <div style="text-align:center; margin-top:10px;">
+                <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA%20FOODS%3B%20NODES%20%26%20GRAPHS%20%E2%80%93%20ROUTE%20DESIGN.xlsx" download>
+                    <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
+                        Download Nodes & Graphs – Route Design
+                    </button>
+                </a>
+            </div>
         </div>
+        """,
+        unsafe_allow_html=True
+    )
 
-        <div style="text-align:center; margin-top:10px;">
-            <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA%20FOODS%3B%20NODES%20%26%20GRAPHS%20%E2%80%93%20ROUTE%20DESIGN.xlsx" download>
-                <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
-                    Download Nodes & Graphs – Route Design
-                </button>
-            </a>
-        </div>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
-st.markdown("---")
+    st.markdown("---")
 
 elif menu == "🧾 Contact":
     st.markdown("---")
 
-    # ---------- CONTACT & LEGAL ----------
+    # CONTACT SECTION
     st.markdown(
         "<h2 style='text-align:center; color:#2b3a2e;'><b>Contact & Legal Information</b></h2>",
         unsafe_allow_html=True
     )
 
-    # --- Contact & Social Media ---
     st.markdown(
         "<h3 style='text-align:left; color:#2b3a2e; font-size:20px;'><b>Contact / Legal</b></h3>",
         unsafe_allow_html=True
     )
 
     st.markdown("""
-    **Email Address** contact@aurorafreshfoods.com  
-    **Phone Number** 3338543245  
+**Email Address** contact@aurorafreshfoods.com  
+**Phone Number** 3338543245  
 
-    **Facebook:** https://www.facebook.com/AuroraFreshFoods  
-    **Instagram:** https://www.instagram.com/AuroraFreshFoods  
-    **Twitter:** https://www.twitter.com/AuroraFreshFoods  
-    **LinkedIn:** https://www.linkedin.com/company/aurorafreshfoods  
-    **YouTube:** https://www.youtube.com/c/AuroraFreshFoods
-    """)
+**Facebook:** https://www.facebook.com/AuroraFreshFoods  
+**Instagram:** https://www.instagram.com/AuroraFreshFoods  
+**Twitter:** https://www.twitter.com/AuroraFreshFoods  
+**LinkedIn:** https://www.linkedin.com/company/aurorafreshfoods  
+**YouTube:** https://www.youtube.com/c/AuroraFreshFoods
+""")
 
-    # --- Privacy Policy ---
     st.markdown(
         "<h3 style='text-align:left; color:#2b3a2e; font-size:20px; margin-top:25px;'><b>Privacy Policy</b></h3>",
         unsafe_allow_html=True
     )
 
     st.markdown("""
-    At Aurora Fresh Foods, we are committed to protecting your privacy. This privacy policy outlines how we collect, use, and protect your personal data when you visit our website or use our services.
+At Aurora Fresh Foods, we are committed to protecting your privacy. This privacy policy outlines how we collect, use, and protect your personal data when you visit our website or use our services.
 
-    1. **Information We Collect**  
-    We collect personal information such as your name, email address, phone number, and any other information you provide through our contact form or during the use of our services.
+1. **Information We Collect**  
+We collect personal information such as your name, email address, phone number, and any other information you provide through our contact form or during the use of our services.
 
-    2. **How We Use Your Information**  
-    We use the information we collect to respond to your inquiries, provide our services, and improve your user experience.
+2. **How We Use Your Information**  
+We use the information we collect to respond to your inquiries, provide our services, and improve your user experience.
+""")
 
-    3. **Data Protection**  
-    We take reasonable measures to protect your data from unauthorized access, alteration, or disclosure. However, no method of transmission over the internet is 100% secure.
-
-    4. **Cookies**  
-    We use cookies to enhance your experience on our website. By using our website, you consent to our use of cookies.
-
-    5. **Your Rights**  
-    You have the right to access, correct, or delete your personal data. If you would like to exercise these rights, please contact us at contact@aurorafreshfoods.com.
-
-    6. **Changes to Privacy Policy**  
-    We reserve the right to update this privacy policy at any time. Any changes will be posted on this page.
-    """)
-
-    # --- Disclaimer ---
     st.markdown(
+        "<h3 style='text-align:left; color:#2b3a2e; font-size:20px; margin-top:25px;'><b>Disclaimer</b></h3>",
+        unsafe_allow_html=True
+    )
+
+    st.markdown("""
+The information provided on this website is for general informational purposes only.
+""")
