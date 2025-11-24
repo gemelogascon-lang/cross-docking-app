@@ -1187,35 +1187,32 @@ In conclusion, **Route 1 provides the perfect balance of lowest cost, highest sp
 """)
         
     st.markdown(
-        """
-        <div style="background-color:#e0f5e0;padding:20px;border-radius:10px;">
-            <h3 style="color:#006400;margin-top:0;">
-                Download Aurora Foods Route Design & Northwest Corner Models
-            </h3>
-    
-            <!-- BOTÓN 1 -->
-            <div style="text-align:center; margin-top:10px;">
-                <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/NORTHWEST%20CORNER%20ACT.xlsx" download>
-                    <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">
-                        Download Northwest Corner Model
-                    </button>
-                </a>
-            </div>
-    
-            <!-- BOTÓN 2 -->
-            <div style="text-align:center; margin-top:10px;">
-                <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/ROUTE%20DESIGN%20ACT.xlsx" download>
-                    <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">
-                        Download Route Design Model
-                    </button>
-                </a>
-            </div>
-    
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+    """
+    <div style="background-color:#e0f5e0;padding:20px;border-radius:10px;">
+        <h3 style="color:#006400;margin-top:0;">
+            Download Aurora Foods Route Design & Northwest Corner Models
+        </h3>
 
+        <div style="text-align:center; margin-top:10px;">
+            <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/NORTHWEST%20CORNER%20ACT.xlsx" download>
+                <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
+                    Download Northwest Corner Model
+                </button>
+            </a>
+        </div>
+
+        <div style="text-align:center; margin-top:10px;">
+            <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/ROUTE%20DESIGN%20ACT.xlsx" download>
+                <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
+                    Download Route Design Model
+                </button>
+            </a>
+        </div>
+
+    </div>
+    """,
+    unsafe_allow_html=True
+)
         
 elif menu == "🧾 Contact":
     st.markdown("---")
