@@ -1187,6 +1187,7 @@ In conclusion, **Route 1 provides the perfect balance of lowest cost, highest sp
 """)
     # BOTON DE EXCEL CON LOS DOS BOTONES
     st.markdown(
+    st.markdown(
         """
         <div style="background-color:#e0f5e0;padding:20px;border-radius:10px;">
             <h3 style="color:#006400;margin-top:0; text-align:center;">
@@ -1194,18 +1195,16 @@ In conclusion, **Route 1 provides the perfect balance of lowest cost, highest sp
             </h3>
     
             <div style="text-align:center; margin-top:10px;">
-                <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA%20FOODS%3B%20HEURISTIC%20MODELS%20%E2%80%93%20NORTHWEST%20CORNER.xlsx" download>
-                    <button style="background-color:#008000;color:white;padding:10px 20px;
-                                   border:none;border-radius:5px;cursor:pointer;font-size:16px;">
+                <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA-FOODS-HEURISTIC-MODELS-NORTHWEST-CORNER.xlsx" download>
+                    <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">
                         Download Heuristic Models – Northwest Corner
                     </button>
                 </a>
             </div>
     
             <div style="text-align:center; margin-top:10px;">
-                <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA%20FOODS%3B%20NODES%20%26%20GRAPHS%20%E2%80%93%20ROUTE%20DESIGN.xlsx" download>
-                    <button style="background-color:#008000;color:white;padding:10px 20px;
-                                   border:none;border-radius:5px;cursor:pointer;font-size:16px;">
+                <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA-FOODS-NODES-GRAPHS-ROUTE-DESIGN.xlsx" download>
+                    <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">
                         Download Nodes & Graphs – Route Design
                     </button>
                 </a>
@@ -1217,8 +1216,7 @@ In conclusion, **Route 1 provides the perfect balance of lowest cost, highest sp
     )
     
     st.markdown("---")
-
-
+        
 elif menu == "🧾 Contact":
     st.markdown("---")
 
