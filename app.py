@@ -1264,3 +1264,4 @@ elif menu == "🧾 Contact":
 
     3. **Data Protection**  
     We take reasonable measures to protect your data from unauthorized access
+    """)
