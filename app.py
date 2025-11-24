@@ -1098,7 +1098,7 @@ Essentially, we calculated the per kilometer rate from the total cost and the di
         unsafe_allow_html=True
     )
     st.image(
-        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Supply.png",
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Supply1.png",
         use_container_width=True
     )
 
@@ -1108,13 +1108,13 @@ Essentially, we calculated the per kilometer rate from the total cost and the di
         unsafe_allow_html=True
     )
     st.image(
-        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Demand1.png",
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Demand11.png",
         use_container_width=True
     )
 
     # 6) Demand2.png
     st.image(
-        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Demand2.png",
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Demand12.png",
         use_container_width=True
     )
 
@@ -1124,7 +1124,7 @@ Essentially, we calculated the per kilometer rate from the total cost and the di
         unsafe_allow_html=True
     )
     st.image(
-        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Totaltranscost.png",
+        "https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/Totaltranscost1.png",
         use_container_width=True
     )
 
