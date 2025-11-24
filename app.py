@@ -1187,7 +1187,7 @@ Route 1 is 23% more efficient (1,630 km shorter) than Route 2.
 It benefits from geographical proximity, more direct highway connections, and optimized border crossings, making it the undisputed best choice for a direct, long-haul shipment.
 """)
 
-    st.markdown("""
+st.markdown("""
 In conclusion, **Route 1 provides the perfect balance of lowest cost, highest speed, and operational reliability**, making it the most effective logistics chain for direct avocado distribution from Mexico to key North American markets and is the one we are going for in this project.
 """)
 
@@ -1221,7 +1221,7 @@ st.markdown(
 
 st.markdown("---")
 
-    elif menu == "🧾 Contact":
+elif menu == "🧾 Contact":
     st.markdown("---")
 
     # ---------- CONTACT & LEGAL ----------
@@ -1277,14 +1277,3 @@ st.markdown("---")
 
     # --- Disclaimer ---
     st.markdown(
-        "<h3 style='text-align:left; color:#2b3a2e; font-size:20px; margin-top:25px;'><b>Disclaimer</b></h3>",
-        unsafe_allow_html=True
-    )
-
-    st.markdown("""
-    The information provided on this website is for general informational purposes only. While we strive to ensure the accuracy and completeness of the information, Aurora Fresh Foods makes no representations or warranties of any kind, express or implied, about the accuracy, reliability, or availability of the information on this website.  
-
-    Aurora Fresh Foods is not responsible for any losses or damages that may occur from the use of information from this website, including but not limited to, direct, indirect, or consequential losses.  
-
-    By using this website, you agree to the terms of this disclaimer and our privacy policy.
-    """)
