@@ -1137,7 +1137,7 @@ However, salads emerge as the most logistically demanding and expensive product,
 
 The key takeaway is that for fresh produce, product characteristics (perishability, bulk) are as critical as volume and distance in determining cost. Strategic origin selection and route optimization are paramount, especially for time-sensitive goods, to minimize expenses and maintain quality.
 """)
-    t.markdown("---")
+
 
     # ---------- DIRECT & INDIRECT ROUTES COMPARISON ----------
     st.markdown(
