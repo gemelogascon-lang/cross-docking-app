@@ -1226,36 +1226,54 @@ elif menu == "🧾 Contact":
     )
 
     st.markdown("""
-**Email Address** contact@aurorafreshfoods.com  
-**Phone Number** 3338543245  
+    **Email Address** contact@aurorafreshfoods.com  
+    **Phone Number** 3338543245  
 
-**Facebook:** https://www.facebook.com/AuroraFreshFoods  
-**Instagram:** https://www.instagram.com/AuroraFreshFoods  
-**Twitter:** https://www.twitter.com/AuroraFreshFoods  
-**LinkedIn:** https://www.linkedin.com/company/aurorafreshfoods  
-**YouTube:** https://www.youtube.com/c/AuroraFreshFoods
-""")
+    **Facebook:** https://www.facebook.com/AuroraFreshFoods  
+    **Instagram:** https://www.instagram.com/AuroraFreshFoods  
+    **Twitter:** https://www.twitter.com/AuroraFreshFoods  
+    **LinkedIn:** https://www.linkedin.com/company/aurorafreshfoods  
+    **YouTube:** https://www.youtube.com/c/AuroraFreshFoods
+    """)
 
+    # --- Privacy Policy ---
     st.markdown(
         "<h3 style='text-align:left; color:#2b3a2e; font-size:20px; margin-top:25px;'><b>Privacy Policy</b></h3>",
         unsafe_allow_html=True
     )
 
     st.markdown("""
-At Aurora Fresh Foods, we are committed to protecting your privacy. This privacy policy outlines how we collect, use, and protect your personal data when you visit our website or use our services.
+    At Aurora Fresh Foods, we are committed to protecting your privacy. This privacy policy outlines how we collect, use, and protect your personal data when you visit our website or use our services.
 
-1. **Information We Collect**  
-We collect personal information such as your name, email address, phone number, and any other information you provide through our contact form or during the use of our services.
+    1. **Information We Collect**  
+    We collect personal information such as your name, email address, phone number, and any other information you provide through our contact form or during the use of our services.
 
-2. **How We Use Your Information**  
-We use the information we collect to respond to your inquiries, provide our services, and improve your user experience.
-""")
+    2. **How We Use Your Information**  
+    We use the information we collect to respond to your inquiries, provide our services, and improve your user experience.
 
+    3. **Data Protection**  
+    We take reasonable measures to protect your data from unauthorized access, alteration, or disclosure. However, no method of transmission over the internet is 100% secure.
+
+    4. **Cookies**  
+    We use cookies to enhance your experience on our website. By using our website, you consent to our use of cookies.
+
+    5. **Your Rights**  
+    You have the right to access, correct, or delete your personal data. If you would like to exercise these rights, please contact us at contact@aurorafreshfoods.com.
+
+    6. **Changes to Privacy Policy**  
+    We reserve the right to update this privacy policy at any time. Any changes will be posted on this page.
+    """)
+
+    # --- Disclaimer ---
     st.markdown(
         "<h3 style='text-align:left; color:#2b3a2e; font-size:20px; margin-top:25px;'><b>Disclaimer</b></h3>",
         unsafe_allow_html=True
     )
 
     st.markdown("""
-The information provided on this website is for general informational purposes only.
-""")
+    The information provided on this website is for general informational purposes only. While we strive to ensure the accuracy and completeness of the information, Aurora Fresh Foods makes no representations or warranties of any kind, express or implied, about the accuracy, reliability, or availability of the information on this website.  
+
+    Aurora Fresh Foods is not responsible for any losses or damages that may occur from the use of information from this website, including but not limited to, direct, indirect, or consequential losses.  
+
+    By using this website, you agree to the terms of this disclaimer and our privacy policy.
+    """)
