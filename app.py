@@ -1139,7 +1139,7 @@ The key takeaway is that for fresh produce, product characteristics (perishabili
 """)
     t.markdown("---")
 
-# ---------- DIRECT & INDIRECT ROUTES COMPARISON ----------
+    # ---------- DIRECT & INDIRECT ROUTES COMPARISON ----------
     st.markdown(
         "<h2 style='text-align:center; color:#2b3a2e;'><b>Direct and Indirect Distribution Routes Comparison</b></h2>",
         unsafe_allow_html=True
@@ -1178,16 +1178,16 @@ The key takeaway is that for fresh produce, product characteristics (perishabili
     )
 
     st.markdown("""
-    This analysis compares four distinct freight distribution routes connecting Mexican production centers with North American markets, evaluating total distance and network efficiency for Aurora Foods transportation logistics.
+This analysis compares four distinct freight distribution routes connecting Mexican production centers with North American markets, evaluating total distance and network efficiency for Aurora Foods transportation logistics.
 
-    **Direct routes analysis:**
+**Direct routes analysis:**
 
-    Route 1 is 23% more efficient (1,630 km shorter) than Route 2.
+Route 1 is 23% more efficient (1,630 km shorter) than Route 2.
 
-    It benefits from geographical proximity, more direct highway connections, and optimized border crossings, making it the undisputed best choice for a direct, long-haul shipment.
-    """)
+It benefits from geographical proximity, more direct highway connections, and optimized border crossings, making it the undisputed best choice for a direct, long-haul shipment.
+""")
 
-st.markdown("""
+    st.markdown("""
 In conclusion, **Route 1 provides the perfect balance of lowest cost, highest speed, and operational reliability**, making it the most effective logistics chain for direct avocado distribution from Mexico to key North American markets and is the one we are going for in this project.
 """)
 
