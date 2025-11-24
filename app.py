@@ -355,7 +355,7 @@ elif menu == "🥭 Products":
             - E-commerce: Online grocery and meal prep platforms  
 
             **Incoterms & Transport:**  
-            - Preferred: DAP (Laredo TX, Dallas, Chicago) / FCA (Guadalajara or Querétaro plant)  
+            - Preferred: DAP (Laredo TX, Dallas, Chicago) / FCA (Guadalajara or Uruapan plant)  
             - Transport Mode: Refrigerated trucking (-18°C continuous cold chain)  
 
             **Estimated Selling Price:**  
@@ -475,7 +475,7 @@ elif menu == "🥭 Products":
             - E-commerce: Local meal delivery and healthy-living platforms  
 
             **Incoterms & Transport:**  
-            - Preferred: DAP (Laredo or San Antonio distribution hub) / FCA (Querétaro plant)  
+            - Preferred: DAP (Laredo or San Antonio distribution hub) / FCA (Hermosillo plant)  
             - Transport Mode: Refrigerated trucking (2–4°C, insulated crates)  
 
             **Estimated Selling Price:**  
