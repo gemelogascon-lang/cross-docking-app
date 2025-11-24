@@ -191,7 +191,7 @@ st.sidebar.title("Navigation Menu")
 st.sidebar.markdown("Select a section to explore:")
 menu = st.sidebar.radio(
     "",
-    ["🏠 Home", "🥭 Products", "🚛 Logistics", "💰 Finance", "🗺️ Routes", "🧾 Contact", ""]
+    ["🏠 Home", "🥭 Products", "🚛 Logistics", "💰 Finance", "🗺️ Routes", "🧾 Contact", "Infographic"]
 )
 
 
