@@ -1191,12 +1191,24 @@ It benefits from geographical proximity, more direct highway connections, and op
 In conclusion, **Route 1 provides the perfect balance of lowest cost, highest speed, and operational reliability**, making it the most effective logistics chain for direct avocado distribution from Mexico to key North American markets and is the one we are going for in this project.
 """)
 
-elif menu == "🧾 Contact":
+elif menu == "🧾 Conclusion":
     st.title("Conclusion")
+
     st.markdown(
-        "The next critical stage occurs at our cross-docking hub in Laredo, TX.\n"
-        "Shipments are efficiently consolidated, inspected, and redistributed to U.S. and Canadian clients.\n"
-        "This model minimizes storage, reduces costs, and ensures faster deliveries.\n\n"
-        "By combining refrigerated trucking with strategic cross-docking, we deliver products "
-        "in the best possible condition - fresh, fast, and reliable."
+        "<h2 style='text-align:center; color:#2b3a2e;'><b>Cross-Docking Hub Efficiency & Service Promise</b></h2>",
+        unsafe_allow_html=True
     )
+
+    st.markdown("""
+The next critical stage occurs at our cross-docking hub in Laredo, TX.
+Shipments are efficiently consolidated, inspected, and redistributed to U.S. and Canadian clients.
+This model minimizes storage, reduces costs, and ensures faster deliveries.
+
+By combining refrigerated trucking with strategic cross-docking, we deliver products in the best possible condition - fresh, fast, and reliable.
+""")
+
+
+
+
+
+
