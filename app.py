@@ -1185,26 +1185,28 @@ It benefits from geographical proximity, more direct highway connections, and op
     st.markdown("""
 In conclusion, **Route 1 provides the perfect balance of lowest cost, highest speed, and operational reliability**, making it the most effective logistics chain for direct avocado distribution from Mexico to key North American markets and is the one we are going for in this project.
 """)
-   # BOTON DE EXCEL CON LOS DOS BOTONES
+# ---------------- BOTONES DE DESCARGA ----------------
     st.markdown(
         """
         <div style="background-color:#e0f5e0;padding:20px;border-radius:10px;">
             <h3 style="color:#006400;margin-top:0; text-align:center;">
-                Download Aurora Foods Route Design & Heuristic Model Files
+                Download Aurora Foods Route Design & Northwest Corner Models
             </h3>
     
             <div style="text-align:center; margin-top:10px;">
-                <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA-FOODS-HEURISTIC-MODELS-NORTHWEST-CORNER.xlsx" download>
-                    <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">
-                        Download Heuristic Models – Northwest Corner
+                <a href="NORTHWEST CORNER ACT.xlsx" download>
+                    <button style="background-color:#008000;color:white;padding:10px 20px;
+                    border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
+                        Download Northwest Corner Model
                     </button>
                 </a>
             </div>
     
             <div style="text-align:center; margin-top:10px;">
-                <a href="https://raw.githubusercontent.com/gemelogascon-lang/cross-docking-app/main/images/AURORA-FOODS-NODES-GRAPHS-ROUTE-DESIGN.xlsx" download>
-                    <button style="background-color:#008000;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-size:16px;">
-                        Download Nodes & Graphs – Route Design
+                <a href="ROUTE DESIGN ACT.xlsx" download>
+                    <button style="background-color:#008000;color:white;padding:10px 20px;
+                    border:none;border-radius:5px;cursor:pointer;font-size:16px;margin-top:10px;">
+                        Download Route Design Model
                     </button>
                 </a>
             </div>
@@ -1215,6 +1217,7 @@ In conclusion, **Route 1 provides the perfect balance of lowest cost, highest sp
     )
     
     st.markdown("---")
+
         
 elif menu == "🧾 Contact":
     st.markdown("---")
