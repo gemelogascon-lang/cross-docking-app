@@ -1263,5 +1263,28 @@ elif menu == "🧾 Contact":
     We use the information we collect to respond to your inquiries, provide our services, and improve your user experience.
 
     3. **Data Protection**  
-    We take reasonable measures to protect your data from unauthorized access
+    We take reasonable measures to protect your data from unauthorized access, alteration, or disclosure. However, no method of transmission over the internet is 100% secure.
+
+    4. **Cookies**  
+    We use cookies to enhance your experience on our website. By using our website, you consent to our use of cookies.
+
+    5. **Your Rights**  
+    You have the right to access, correct, or delete your personal data. If you would like to exercise these rights, please contact us at contact@aurorafreshfoods.com.
+
+    6. **Changes to Privacy Policy**  
+    We reserve the right to update this privacy policy at any time. Any changes will be posted on this page.
+    """)
+
+    # --- Disclaimer ---
+    st.markdown(
+        "<h3 style='text-align:left; color:#2b3a2e; font-size:20px; margin-top:25px;'><b>Disclaimer</b></h3>",
+        unsafe_allow_html=True
+    )
+
+    st.markdown("""
+    The information provided on this website is for general informational purposes only. While we strive to ensure the accuracy and completeness of the information, Aurora Fresh Foods makes no representations or warranties of any kind, express or implied, about the accuracy, reliability, or availability of the information on this website.  
+
+    Aurora Fresh Foods is not responsible for any losses or damages that may occur from the use of information from this website, including but not limited to, direct, indirect, or consequential losses.  
+
+    By using this website, you agree to the terms of this disclaimer and our privacy policy.
     """)
